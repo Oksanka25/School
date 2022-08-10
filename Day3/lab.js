@@ -34,6 +34,7 @@ else {
 }
 
 // For Loops
+
 // 0-9
 for (let i = 0; i < 10; i++) {
     console.log(i);
@@ -77,6 +78,13 @@ for (let i = 6; i <= 60; i++) {
 // #####
 // ######
 // #######
+
+let arr = [];
+for (let i = 1; i <= 7; i++) {
+    let i = "#"
+    arr.push(i);
+    console.log(arr.join(" ").toString());
+}
 
 // Using the remainder % operator, write a for loop that iterates between 0 and 10 and prints all even numbers
 
@@ -125,3 +133,4 @@ for (let i = 1; i <= 100; i++) {
         console.log(i);
     }
 }
+
