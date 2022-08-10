@@ -56,8 +56,56 @@ for (let i = 1; i < 10; i += 2) {
 }
 
 // a loop that outputs multiples of 3 starting at 6 ending at 60.
-
+// #1
 for (let i = 6; i <= 60; i += 3) {
     console.log(i);
 }
 
+// #2
+for (let i = 6; i <= 60; i++) {
+    if (i % 3 === 0)
+        console.log(i);
+}
+
+
+
+// Write a for loop for the given output:
+// #
+// ##
+// ###
+// ####
+// #####
+// ######
+// #######
+
+// Using the remainder % operator, write a for loop that iterates between 0 and 10 and prints all even numbers
+
+for (let i = 0; i <= 10; i++) {
+    if (i % 2 === 0 && i > 0)
+        console.log(i);
+}
+
+
+// EX 
+let grade = 50;
+if (grade >= 80) {
+    console.log(" You did a great job")
+} else if (grade < 80 && grade >= 70) {
+    console.log("Keep trying")
+} else if (grade < 70 && grade >= 60) {
+    console.log("ehhhh")
+} else if (grade < 60 && grade >= 55) {
+    console.log("Not to good")
+} else {
+    console.log("Bad Grade But You'll Get Em Next Time")
+}
+
+
+// Write a for loop for the given output: 10, 30, 50, 70, 90 20, 40, 60, 80, 100
+
+for (let i = 0; i <= 100; i++) {
+    if (i % 10 === 0 && i > 0)
+        console.log(i);
+}
+
+// Write a program that prints the numbers from 1 to 100 and for multiples of '3' print "Fizz" instead of the number and for the multiples of '5' print "Buzz". If can be multiplied by 3&5 console log 'FizzBuzz'
