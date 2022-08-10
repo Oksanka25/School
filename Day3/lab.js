@@ -103,9 +103,25 @@ if (grade >= 80) {
 
 // Write a for loop for the given output: 10, 30, 50, 70, 90 20, 40, 60, 80, 100
 
-for (let i = 0; i <= 100; i++) {
-    if (i % 10 === 0 && i > 0)
-        console.log(i);
+for (let i = 10; i <= 100; i += 20) {
+    console.log(i);
+    if (i >= 90) {
+        for (let i = 20; i <= 100; i += 20)
+            console.log(i);
+    }
 }
 
 // Write a program that prints the numbers from 1 to 100 and for multiples of '3' print "Fizz" instead of the number and for the multiples of '5' print "Buzz". If can be multiplied by 3&5 console log 'FizzBuzz'
+
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 15 === 0)
+        console.log("FizzBuzz")
+    else if (i % 3 === 0)
+        console.log("Fizz")
+    else if (i % 5 === 0) {
+        console.log("Buzz")
+    } else {
+        console.log(i);
+    }
+}
