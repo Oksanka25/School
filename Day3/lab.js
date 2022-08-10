@@ -1,3 +1,4 @@
+// If statements
 let number = 0;
 
 if (number > 0) {
@@ -17,6 +18,9 @@ if (age >= 18) {
     console.log(`Access to the website denied. The minimum age is 18, wait ${18 - age} years`);
 }
 
+
+// Nested if statements
+
 let num = 5;
 if (num > 100) {
     console.log(` The number ${num} is positive and greater than 100.`)
@@ -28,3 +32,22 @@ if (num > 100) {
 else {
     console.log(`${num} is a negative number`)
 }
+
+// For Loops
+// 0-9
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// for loop that counts down from 10 to 1.
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+// for loop for the given output: 1, 3, 5, 7, 9 2, 4, 6, 8, 10
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// a loop that outputs multiples of 3 starting at 6 ending at 60.
+
