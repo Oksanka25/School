@@ -44,9 +44,15 @@ for (let i = 10; i >= 1; i--) {
     console.log(i);
 }
 
-// for loop for the given output: 1, 3, 5, 7, 9 2, 4, 6, 8, 10
-for (let i = 1; i <= 10; i++) {
+// for loop for the given output: 1, 3, 5, 7, 9, 2, 4, 6, 8, 10
+
+for (let i = 1; i < 10; i += 2) {
     console.log(i);
+    if (i > 8) {
+        for (let i = 2; i < 11; i += 2) {
+            console.log(i);
+        }
+    }
 }
 
 // a loop that outputs multiples of 3 starting at 6 ending at 60.
