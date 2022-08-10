@@ -11,6 +11,13 @@ let numB = 7;
 let sum1 = numB + numY + numX;
 console.log(sum1);
 
+let number1 = 5;
+let number2 = -2;
+let number3 = 7;
+let number4 = 7;
+let totalSum = (number3 * 2) + number2 + number1;
+console.log(totalSum);
+
 // Exercise Find the Average
 
 num1 = 4;
