@@ -15,6 +15,7 @@ let addThis = 0;
 let sum = 0;
 while (addThis < 10) {
     sum = addThis + sum
+    // sum += addThis
     addThis++
 }
 console.log(sum);
@@ -29,3 +30,26 @@ if (num > 100) {
     final = num * 2
 }
 console.log(final)
+
+// #4
+// Write a function wereAwesome that takes you and your pair programming partner's name and returns the string "[your buddy's name] and [you] are awesome!"
+
+function wereAwesome(you, yourBuddy) {
+    return `${yourBuddy} and ${you} are awesome!`
+}
+
+console.log(wereAwesome("Dave", "Will")); // => "Will and Dave are awesome!"
+console.log(wereAwesome("Victoria", "Jenny")); // => "Jenny and Victoria are awesome!"
+console.log(wereAwesome("Chris", "Jac")); // => "Jac and Chris are awesome!"
+console.log(wereAwesome("Phillip", "Skyler")); // => "Skyler and Phillip are awesome!"
+
+// #5
+// Create a function addWaldo that accepts an object with keys being first names and values being last names. For example addWaldo({'Luke': 'Skywalker', 'Harley': 'Quinn', 'Ryan': 'Reynolds'}) should add the key 'Waldo' with the value 'unknown' to the object and return the mutated object.
+
+const addWaldo = (object1) => {
+    object1.Waldo = "unknown"
+}
+
+// Uncomment these to check your work!
+const siliconValley = { 'Richard': 'Hendricks', 'Erlich': 'Bachman', 'Bertram': 'Gilfoyle' }
+console.log(addWaldo(siliconValley)) // should log:{ Richard: 'Hendricks', Erlich: 'Bachman', Bertram: 'Gilfoyle', Waldo: 'unknown' }
