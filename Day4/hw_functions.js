@@ -21,11 +21,24 @@ const maxOfThreeNumbers = (a, b, c) => {
         return `${c} is the largest`
     }
 }
-console.log(maxOfThreeNumbers(3, 5, 20));
-console.log(maxOfThreeNumbers(9, 5, 2));
-console.log(maxOfThreeNumbers(7, 13, 0));
+// console.log(maxOfThreeNumbers(3, 5, 20));
+// console.log(maxOfThreeNumbers(9, 5, 2));
+// console.log(maxOfThreeNumbers(7, 13, 0));
 
-// 3. Define a function, as a function declaration, isCharAVowelthat takes a character as an argument and returns true if it is a vowel, false otherwise.
+// 3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
+const isCharAVowel = (char) => {
+    let vowels = ['a', 'e', 'y', 'i', 'u', 'o'];
+    for (let i = 0; i < vowels.length; i++) {
+        if (char.toLowerCase() === vowels[i]) {
+            return true
+        }
+    }
+    return false
+}
+console.log(isCharAVowel('a'))
+console.log(isCharAVowel('b'))
+console.log(isCharAVowel('Y'))
+
 
 // 4. Define a function, as a function expression, sumArraythat takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.
 
