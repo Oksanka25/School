@@ -31,6 +31,7 @@ while (x <= 100) {
     x += 5;
 }
 
+
 // Ex3
 // Using a while loop print integers between 0 and 20. All numbers divisible by 2 should be multiplied by 3 before they are output. All other integers should not be output.
 
