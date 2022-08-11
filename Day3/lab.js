@@ -86,6 +86,9 @@ for (let i = 1; i <= 7; i++) {
     console.log(arr.join(" ").toString());
 }
 
+
+// Remainder Operator - %
+
 // Using the remainder % operator, write a for loop that iterates between 0 and 10 and prints all even numbers
 
 for (let i = 0; i <= 10; i++) {
@@ -93,6 +96,28 @@ for (let i = 0; i <= 10; i++) {
         console.log(i);
 }
 
+// Write a for loop that iterates from 1 - 20. Prints “prime” for all prime numbers, “even” for all even numbers, and “odd” for all odd numbers.
+// Odd/Even numbers
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(`${i} is an even number`)
+    } else {
+        console.log(`${i} is an odd number`)
+    }
+}
+// Check Prime numbers
+function isPrime(num) {
+    if (num < 2)
+        return `${num} is NOT a prime`;
+
+    for (let k = 2; k < num; k++) {
+        if (num % k == 0) {
+            return `${num} is NOT a prime`;
+        }
+    }
+    return `${num} is a prime`;
+}
+console.log(isPrime(5));
 
 // EX 
 let grade = 50;
