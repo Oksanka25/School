@@ -46,6 +46,20 @@ while (j < 20) {
 // Ex4
 // Using a while loop, print out all prime numbers between 0 - 20
 
+let p = 2;
+while (p < 20) {
+    if (p === 2 || p === 3) {
+        console.log(`${p} is a prime num`)
+    }
+    else if (p % 2 !== 0 && p % 3 !== 0) {
+        console.log(`${p} is a prime num`)
+    }
+    else {
+        console.log(p);
+    }
+    p++;
+}
+
 
 // Ex5
 // Nando went to the vending machine to buy himself a cookie. The cookie costs $4 dollars. He paid with a $10 bill, the vending machine paid him back in quarters. Write a loop that says how many quarters he got in return.
