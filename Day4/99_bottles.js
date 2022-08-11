@@ -1,9 +1,9 @@
-let beers = 99
+let beers = 99;
 while (beers != 0) {
     if (beers > 1) {
-        console.log(`${beers} bottles of beer on the wall, ${beers} bottles of beer`);
+        console.log(`${beers} bottles of beer on the wall, ${beers} bottles of beer.`);
     } else {
-        console.log(`${beers} bottle of beer on the wall, ${beers} bottle of beer`);
+        console.log(`${beers} bottle of beer on the wall, ${beers} bottle of beer.`);
     }
     beers--;
     if (beers === 1) {
