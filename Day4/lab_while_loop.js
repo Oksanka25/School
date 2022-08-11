@@ -48,9 +48,19 @@ while (j < 20) {
 
 // Ex5
 // Nando went to the vending machine to buy himself a cookie. The cookie costs $4 dollars. He paid with a $10 bill, the vending machine paid him back in quarters. Write a loop that says how many quarters he got in return.
-
+// #1
 let paidD = 10;
 let costD = 4;
 let change = paidD - costD;
-let quarters = change / .25;
+let quarters1 = change / .25;
+console.log(quarters1)
+
+// #2
+let paidDollars = 10;
+let costDollars = 4;
+let quarters = 0;
+while (paidDollars > costDollars) {
+    paidDollars--;
+    quarters += 4;
+}
 console.log(quarters)
