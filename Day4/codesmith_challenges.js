@@ -50,6 +50,20 @@ const addWaldo = (object1) => {
     object1.Waldo = "unknown"
 }
 
-// Uncomment these to check your work!
 const siliconValley = { 'Richard': 'Hendricks', 'Erlich': 'Bachman', 'Bertram': 'Gilfoyle' }
 console.log(addWaldo(siliconValley)) // should log:{ Richard: 'Hendricks', Erlich: 'Bachman', Bertram: 'Gilfoyle', Waldo: 'unknown' }
+
+// #6
+// Write a function iLoveEvenNumbers that takes a number argument and returns 'Oh Yeah Evens!' if the argument is even or 'I am too normal for odd numbers' if the argument is odd.
+
+function iLoveEvenNumbers(num) {
+    if (num % 2 === 0) {
+        return 'Oh Yeah Evens!'
+    } else {
+        return 'I am too normal for odd numbers'
+    }
+}
+
+console.log(iLoveEvenNumbers(42)); // expected log 'Oh Yeah Evens!'
+console.log(iLoveEvenNumbers(17)); // expected log 'I am too normal for odd numbers'
+
