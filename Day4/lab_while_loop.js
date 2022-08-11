@@ -47,7 +47,7 @@ while (j < 20) {
 // Using a while loop, print out all prime numbers between 0 - 20
 
 let p = 2;
-while (p < 20) {
+while (p < 30) {
     if (p === 2 || p === 3) {
         console.log(`${p} is a prime num`)
     }
@@ -68,7 +68,7 @@ let paidD = 10;
 let costD = 4;
 let change = paidD - costD;
 let quarters1 = change / .25;
-console.log(quarters1)
+// console.log(quarters1)
 
 // #2
 let paidDollars = 10;
@@ -78,4 +78,4 @@ while (paidDollars > costDollars) {
     paidDollars--;
     quarters += 4;
 }
-console.log(quarters)
+// console.log(quarters)

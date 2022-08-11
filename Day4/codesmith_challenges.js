@@ -1,3 +1,4 @@
+// Loops Challenges:
 // #1
 // You are given an array of five numbers called increaseByTwo. Use a for loop to iterate through the array and increase each number by two.
 const increaseByTwo = [1, 2, 3, 4, 5];
@@ -31,6 +32,7 @@ if (num > 100) {
 }
 console.log(final)
 
+// Function Challenges:
 // #4
 // Write a function wereAwesome that takes you and your pair programming partner's name and returns the string "[your buddy's name] and [you] are awesome!"
 
