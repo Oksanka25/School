@@ -65,7 +65,11 @@ console.log(multiplyArray([2, 4, 5]));
 
 // 6. Define a function, as a function expression, numArgs that returns the number of arguments passed to the function when called.
 
-
+let args = [];
+const numArgs = (args) => {
+    return args.length
+}
+console.log(numArgs('ab'))
 
 // 7. Define a function, as a function declaration, reverseString that takes a string, reverses the characters, and returns it. For example, reverseString('rockstar');would return the string "ratskcor".
 
