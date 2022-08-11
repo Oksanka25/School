@@ -44,3 +44,13 @@ while (j < 20) {
 
 // Ex4
 // Using a while loop, print out all prime numbers between 0 - 20
+
+
+// Ex5
+// Nando went to the vending machine to buy himself a cookie. The cookie costs $4 dollars. He paid with a $10 bill, the vending machine paid him back in quarters. Write a loop that says how many quarters he got in return.
+
+let paidD = 10;
+let costD = 4;
+let change = paidD - costD;
+let quarters = change / .25;
+console.log(quarters)
