@@ -1,0 +1,43 @@
+/* ATM */
+
+.atm-container {
+    border: 3px solid black;
+    height: 82vh;
+    margin: 1em;
+    background-color: lightgray;
+    padding: 1em;
+}
+
+.atm-title {
+    border: solid black;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+/* ATM body */
+.atm-body {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.btn-left {
+    border: 3px solid yellow;
+    height: 230px;
+    width: 25%;
+}
+
+.screen {
+    border: 3px solid black;
+    height: 230px;
+    width: 60%;
+    background-color: black;
+}
+
+.btn-right {
+    border: 3px solid blue;
+    height: 230px;
+    width: 25%;
+}
