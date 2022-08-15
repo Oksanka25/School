@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+.nav-container {
+    border: .2px solid black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nike-icon {
+    height: 60px;
+    margin-left: 3px;
+}
+
+.b-case {
+    height: 40px;
+    margin: 6px;
+}
+
+.b-case:hover {
+    height: 40px;
+    margin-bottom: 12px;
+    border: .2px solid black;
+    border-radius: 50%;
+    background-color: lightgray;
+
+}
+
+.mg-glass {
+    height: 30px;
+    margin-bottom: 9px;
+}
+
+.mg-glass:hover {
+    height: 30px;
+    margin-bottom: 6px;
+    border: .2px solid black;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.top-scroll {
+    text-align: center;
+    margin: 5px;
+}
+
+.joiner {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.joiner a {
+    color: black;
+}
+
+.main-pic {
+    width: 90%;
+
+}
+
+.main-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-heading {
+    text-align: center;
+}
+
+.sub-heading-h {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 5px 18px 5px 18px;
+}
+
+.btn-black:hover {
+    filter: opacity(60%)
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    border: .1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px 18px 5px 18px;
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+
+}
+
+.btn-white:hover,
+.btn-white2:hover,
+.btn-white3:hover {
+    background-color: lightgray;
+}
+
+.featured-container {
+    position: relative;
+    text-align: center;
+
+}
+
+.featured-subheading {
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+}
+
+.featured-img-one {
+    width: 90%;
+}
+
+.btn-white2 {
+    background-color: white;
+    color: black;
+    border: .1px solid lightgray;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px 18px 5px 18px;
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+
+}
+
+.btn-white3 {
+    background-color: white;
+    color: black;
+    border: .1px solid lightgray;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px 18px 5px 18px;
+    position: absolute;
+    bottom: 30px;
+    left: 25%;
+
+}
+
+.featured-container img:hover {
+    background-color: lightgray;
+    padding: 1px;
+}
