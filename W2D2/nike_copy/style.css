@@ -69,6 +69,10 @@
     text-align: center;
 }
 
+.sub-heading a {
+    text-decoration: none;
+}
+
 .sub-heading-h {
     font-family: 'Anton', sans-serif;
     font-size: 30px;
@@ -112,6 +116,8 @@
 
 }
 
+
+
 .featured-subheading {
     position: absolute;
     bottom: 50px;
@@ -154,4 +160,57 @@
 .featured-container img:hover {
     background-color: lightgray;
     padding: 1px;
+}
+
+
+
+
+/* PRODUCT PAGE */
+
+.theme-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.theme-tab:hover {
+    color: gray
+}
+
+/* --------- */
+
+.sneaker-container {
+    height: 64vh;
+    margin: 6px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sneaker-box {
+    background-color: aliceblue;
+    border: 0.2px solid aliceblue;
+    width: 190px;
+    background-color: grey;
+    margin: 6px;
+}
+
+.sneaker-box:hover {
+    border: 0.1px solid black;
+    /* margin: 12px; */
+    /* border-width: 5px;
+    width: 250px; */
+    background-color: beige;
+}
+
+.sneaker-info {
+    border: solid lemonchiffon;
+    height: 80px;
+    text-align: center;
+    background-color: #333C3F;
+    color: lemonchiffon;
+}
+
+.shoe {
+    height: fit-content;
+    width: 100%;
 }
