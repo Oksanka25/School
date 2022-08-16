@@ -59,7 +59,7 @@ const house = {
         bedroom: true
     },
     getsCleaned: function () {
-        console.log('cleaned')
+        console.log('Cleaned')
     }
 
 }
