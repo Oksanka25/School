@@ -1,0 +1,27 @@
+/* NAVIGATION */
+
+.nav {
+    width: 20%;
+    border-radius: 10px;
+    background-color: #121617;
+    min-width: 200px;
+}
+
+
+.nav-item {
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-transform: capitalize;
+    background-color: #fc7145;
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: #f85018;
+}
