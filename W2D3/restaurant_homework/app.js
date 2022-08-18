@@ -6,6 +6,7 @@ class Item {
         this.price = price
     }
 }
+
 const brunch = [
     new Item('Brunch', 'Breakfast burrito', '250', 10),
     new Item('Brunch', 'Cinnamon rolls', '430', 8),
@@ -30,7 +31,7 @@ const dinner = [
     new Item('Dinner', 'Chicken wings', '650', 17),
     new Item('Dinner', 'Beef & broccoli', '530', 15)
 ]
-const desert = [
+const dessert = [
     new Item('Dessert', 'Apple pie', '350', 15),
     new Item('Dessert', 'Cheesecake', '330', 11),
     new Item('Dessert', 'Pecan pie', '220', 10),
