@@ -56,7 +56,17 @@ const appetizer = [
     new Item('Appetizer', 'Shrimp Scampi', '125', 15)
 ]
 
-console.log(appetizer)
+// console.log(appetizer)
+
+
+const brunchLink = document.getElementById("brunch-link");
+const lunchLink = document.getElementById("lunch-link");
+const dinnerLink = document.getElementById("dinner-link");
+const dessertLink = document.getElementById("dessert-link");
+const beverageLink = document.getElementById("beverage-link");
+const appetizerLink = document.getElementById("appetizer-link");
+
+const menuElement = document.getElementById("menu");
 
 
 
