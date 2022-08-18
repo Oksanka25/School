@@ -1,62 +1,69 @@
 class Item {
-    constructor(mealType, dishName, numCalories, price) {
+    constructor(mealType, dishName, numCalories, price, image) {
         this.mealType = mealType
         this.dishName = dishName
         this.numCalories = numCalories
         this.price = price
+        this.image = image
     }
 }
 
-const brunch = [
-    new Item('Brunch', 'Breakfast burrito', '250', 10),
-    new Item('Brunch', 'Cinnamon rolls', '430', 8),
-    new Item('Brunch', 'Eggs Benedict', '220', 12),
-    new Item('Brunch', 'French toast', '234', 11),
-    new Item('Brunch', 'Pancakes', '305', 14),
-    new Item('Brunch', 'Quiche', '280', 16)
-]
-const lunch = [
-    new Item('Lunch', 'Cucumber Sandwich', '150', 10),
-    new Item('Lunch', 'White Bean & Veggie Salad', '320', 12),
-    new Item('Lunch', 'Avocado Egg Salad', '420', 13),
-    new Item('Lunch', 'Caprese Sandwich', '234', 12),
-    new Item('Lunch', 'Whole-Wheat Veggie Wrap', '350', 17),
-    new Item('Lunch', 'Couscous & Chickpea Salad', '230', 15)
-]
-const dinner = [
-    new Item('Dinner', 'Calzones', '450', 18),
-    new Item('Dinner', 'French bread pizza', '520', 17),
-    new Item('Dinner', 'Chicken parmesan', '420', 16),
-    new Item('Dinner', 'Meatloaf', '654', 19),
-    new Item('Dinner', 'Chicken wings', '650', 17),
-    new Item('Dinner', 'Beef & broccoli', '530', 15)
-]
-const dessert = [
-    new Item('Dessert', 'Apple pie', '350', 15),
-    new Item('Dessert', 'Cheesecake', '330', 11),
-    new Item('Dessert', 'Pecan pie', '220', 10),
-    new Item('Dessert', 'Carrot cake', '255', 12),
-    new Item('Dessert', 'Boston cream pie', '250', 13),
-    new Item('Dessert', 'Ice-cream', '325', 9)
-]
-const beverage = [
-    new Item('Beverage', 'Coffee', '50', 10),
-    new Item('Beverage', 'Sparkling drink', '30', 11),
-    new Item('Beverage', 'Orange Juice', '40', 10),
-    new Item('Beverage', 'Milkshakes', '55', 12),
-    new Item('Beverage', 'Lemonade', '50', 13),
-    new Item('Beverage', 'Mojito', '25', 9)
-]
-const appetizer = [
-    new Item('Appetizer', 'Bruschetta', '150', 10),
-    new Item('Appetizer', 'Artichoke and Spinach Dip', '130', 11),
-    new Item('Appetizer', 'Stuffed Mushrooms', '140', 10),
-    new Item('Appetizer', 'Fried Calamari', '155', 12),
-    new Item('Appetizer', 'Four Cheese Garlic Bread', '145', 11),
-    new Item('Appetizer', 'Shrimp Scampi', '125', 15)
+const PLUG_IMG = './images/food.jpg';
+
+// Data
+const brunchData = [
+    new Item('Brunch', 'Breakfast burrito', '250', 10, './images/burrito.jpg'),
+    new Item('Brunch', 'Cinnamon rolls', '430', 8, './images/cinnamon-rolls.jpg'),
+    new Item('Brunch', 'Eggs Benedict', '220', 12, PLUG_IMG),
+    new Item('Brunch', 'French toast', '234', 11, PLUG_IMG),
+    new Item('Brunch', 'Pancakes', '305', 14, PLUG_IMG),
+    new Item('Brunch', 'Quiche', '280', 16, PLUG_IMG)
 ]
 
-// console.log(appetizer)
+const lunchData = [
+    new Item('Lunch', 'Cucumber Sandwich', '150', 10, PLUG_IMG),
+    new Item('Lunch', 'White Bean & Veggie Salad', '320', 12, PLUG_IMG),
+    new Item('Lunch', 'Avocado Egg Salad', '420', 13, PLUG_IMG),
+    new Item('Lunch', 'Caprese Sandwich', '234', 12, PLUG_IMG),
+    new Item('Lunch', 'Whole-Wheat Veggie Wrap', '350', 17, PLUG_IMG),
+    new Item('Lunch', 'Couscous & Chickpea Salad', '230', 15, PLUG_IMG)
+]
+
+const dinnerData = [
+    new Item('Dinner', 'Calzones', '450', 18, PLUG_IMG),
+    new Item('Dinner', 'French bread pizza', '520', 17, PLUG_IMG),
+    new Item('Dinner', 'Chicken parmesan', '420', 16, PLUG_IMG),
+    new Item('Dinner', 'Meatloaf', '654', 19, PLUG_IMG),
+    new Item('Dinner', 'Chicken wings', '650', 17, PLUG_IMG),
+    new Item('Dinner', 'Beef & broccoli', '530', 15, PLUG_IMG)
+]
+
+const dessertData = [
+    new Item('Dessert', 'Apple pie', '350', 15, PLUG_IMG),
+    new Item('Dessert', 'Cheesecake', '330', 11, PLUG_IMG),
+    new Item('Dessert', 'Pecan pie', '220', 10, PLUG_IMG),
+    new Item('Dessert', 'Carrot cake', '255', 12, PLUG_IMG),
+    new Item('Dessert', 'Boston cream pie', '250', 13, PLUG_IMG),
+    new Item('Dessert', 'Ice-cream', '325', 9, PLUG_IMG)
+]
+
+const beverageData = [
+    new Item('Beverage', 'Coffee', '50', 10, PLUG_IMG),
+    new Item('Beverage', 'Sparkling drink', '30', 11, PLUG_IMG),
+    new Item('Beverage', 'Orange Juice', '40', 10, PLUG_IMG),
+    new Item('Beverage', 'Milkshakes', '55', 12, PLUG_IMG),
+    new Item('Beverage', 'Lemonade', '50', 13, PLUG_IMG),
+    new Item('Beverage', 'Mojito', '25', 9, PLUG_IMG)
+]
+
+const appetizerData = [
+    new Item('Appetizer', 'Bruschetta', '150', 10, PLUG_IMG),
+    new Item('Appetizer', 'Artichoke and Spinach Dip', '130', 11, PLUG_IMG),
+    new Item('Appetizer', 'Stuffed Mushrooms', '140', 10, PLUG_IMG),
+    new Item('Appetizer', 'Fried Calamari', '155', 12, PLUG_IMG),
+    new Item('Appetizer', 'Four Cheese Garlic Bread', '145', 11, PLUG_IMG),
+    new Item('Appetizer', 'Shrimp Scampi', '125', 15, PLUG_IMG)
+]
 
 // DOM-manipulation
 
@@ -90,8 +97,22 @@ function createMenuItem(itemData) {
     return item;
 }
 
-// console.log(createMenuItem())
+function createMenu(title, itemsData) {
+    let items = "";
 
+    itemsData.forEach(el => items += createMenuItem(el));
+
+    const menu = `
+      <div id="menu" class="menu">
+            <h1 class="menu-title">${title}</h1>
+            <div class="menu-items">
+                ${items}
+            </div>
+        </div>
+    `
+
+    return menu;
+}
 
 function renderMenu(element) {
     menuElement.innerHTML = element;
@@ -134,9 +155,3 @@ function init() {
 }
 
 init();
-
-
-
-
-
-
