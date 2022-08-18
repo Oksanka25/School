@@ -58,6 +58,7 @@ const appetizer = [
 
 // console.log(appetizer)
 
+// DOM-manipulation
 
 const brunchLink = document.getElementById("brunch-link");
 const lunchLink = document.getElementById("lunch-link");
@@ -67,6 +68,30 @@ const beverageLink = document.getElementById("beverage-link");
 const appetizerLink = document.getElementById("appetizer-link");
 
 const menuElement = document.getElementById("menu");
+
+function createMenuItem(itemData) {
+    const { mealType, dishName, numCalories, price, image } = itemData;
+    console.log(mealType);
+
+    const item = `
+        <div class="menu-item">
+            <div class="menu-item__image">
+                <img src=${image} alt="">
+            </div>
+            <h3 class="menu-item__name">${dishName}</h3>
+            <p class="menu-item__type">${mealType}</p>
+            <div class="menu-item__sub-info">
+                <p class="menu-item__calories"><span>${numCalories}</span> cal</p>
+                <p class="menu-item__price"><span> $${price}</span></p>
+            </div>
+            <button class="menu-item__order">Buy</button>
+        </div>`
+
+    return item;
+}
+
+console.log(createMenuItem())
+
 
 
 
