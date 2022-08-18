@@ -1,3 +1,26 @@
+/* RESET DEFAULT */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
 /* NAVIGATION */
 
 .nav {
