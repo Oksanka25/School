@@ -90,7 +90,50 @@ function createMenuItem(itemData) {
     return item;
 }
 
-console.log(createMenuItem())
+// console.log(createMenuItem())
+
+
+function renderMenu(element) {
+    menuElement.innerHTML = element;
+}
+
+brunchLink.addEventListener("click", () => {
+    const menu = createMenu("brunch", brunchData);
+    renderMenu(menu)
+})
+
+lunchLink.addEventListener("click", () => {
+    const menu = createMenu("lunch", lunchData);
+    renderMenu(menu)
+})
+
+dinnerLink.addEventListener("click", () => {
+    const menu = createMenu("dinner", dinnerData);
+    renderMenu(menu)
+})
+
+dessertLink.addEventListener("click", () => {
+    const menu = createMenu("dessert", dessertData);
+    renderMenu(menu)
+})
+
+beverageLink.addEventListener("click", () => {
+    const menu = createMenu("beverage", beverageData);
+    renderMenu(menu)
+})
+
+appetizerLink.addEventListener("click", () => {
+    const menu = createMenu("appetizer", appetizerData);
+    renderMenu(menu)
+})
+
+
+function init() {
+    const menu = createMenu("brunch", brunchData);
+    renderMenu(menu)
+}
+
+init();
 
 
 
