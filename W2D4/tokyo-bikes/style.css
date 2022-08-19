@@ -52,9 +52,8 @@ body {
 
 .main-text {
     position: absolute;
-    left: 10%;
-    top: 70%;
-    opacity: .5;
+    top: 75%;
+    opacity: .751;
     background-color: rgb(255, 255, 255);
     width: 100%;
     padding: 30px;
@@ -62,6 +61,11 @@ body {
 
 .main-text button {
     padding: 10px 17px;
+}
+
+button {
+    background-color: rgb(255, 255, 255, 1.5);
+    ;
 }
 
 
@@ -87,8 +91,6 @@ body {
 
 .bike-box,
 .explore-box {
-    /* background-color: white;
-    border: 0.2px solid aliceblue; */
     width: 370px;
     margin: 10px;
     overflow: hidden;
