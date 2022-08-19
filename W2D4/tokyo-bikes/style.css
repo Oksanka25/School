@@ -1,0 +1,207 @@
+body {
+    color: #2e2e2e;
+}
+
+.top-line {
+    text-align: center;
+    color: white;
+    background-color: #6b7866;
+    font-size: 15px;
+    padding: 8px;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.navbar-container img {
+    margin-top: 6px;
+
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.main-container {
+    position: relative;
+}
+
+.main-image {
+    position: relative;
+    width: 100%;
+    /* height: calc(100vh - 153px); */
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0;
+}
+
+.main-text {
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    opacity: .5;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 30px;
+}
+
+.main-text button {
+    padding: 10px 17px;
+}
+
+
+/* 
+------ */
+#variety-heading,
+#inside-heading {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.bikes-variety,
+.explore-bikes {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bikes-variety {
+    background-color: #eeeeee;
+}
+
+.bike-box,
+.explore-box {
+    /* background-color: white;
+    border: 0.2px solid aliceblue; */
+    width: 370px;
+    margin: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.bike-info {
+    margin-bottom: 25px;
+}
+
+.bike,
+.explore {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+}
+
+.bike:hover {
+    transform: scale(1.1);
+}
+
+.bikes-variety h3 {
+    color: rgb(44, 43, 43);
+}
+
+.info button {
+    padding: 10px 17px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.info button:hover {
+    background-color: rgb(218, 233, 238);
+}
+
+.circle-red {
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.circle-black {
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.circle-green {
+    width: 10px;
+    height: 10px;
+    background-color: #0b8c0b;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.circle-orange {
+    width: 10px;
+    height: 10px;
+    background-color: #ff7b00;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.circle-blue {
+    width: 10px;
+    height: 10px;
+    background-color: #1945d7;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.circle-white {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.circle-purple {
+    width: 10px;
+    height: 10px;
+    background-color: #800080;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.circle-blue:hover,
+.circle-black:hover,
+.circle-green:hover,
+.circle-orange:hover,
+.circle-purple:hover,
+.circle-red:hover,
+.circle-white:hover {
+    transform: scale(1.8);
+}
