@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/W2D5/dom/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation  -->
+    <div class="navContainer">
+        <div class="navTab">About</div>
+        <div class="navTab">Contact</div>
+        <!-- DropDown -->
+        <div class="dropdown">
+            <div class="navTab"> Hover Drop</div>
+            <div class="drop-content">
+                <p>This hoverable just worked!</p>
+            </div>
+        </div>
+        <!-- Clickable DropDown -->
+        <div class="cliqueDrop">
+            <div class="navTab" onclick="clickDrop()"> Clickable </div>
+
+            <div class="cliqueContent">
+                <button class="navPill">About</button>
+                <button class="navPill">Contact</button>
+                <button class="navPill">Register</button>
+            </div>
+        </div>
+    </div>
+    <!-- ---------NavBar -->
+
+    <div class="topContainer">
+        <img src="https://assets.stickpng.com/images/584f040b6a5ae41a83ddee4a.png" alt="" class="sky">
+    </div>
+    <hr>
+    <div class="colorPalette">
+        <div class="navTab" onclick="sun()">Sun</div>
+        <div class="navTab" onclick="snow()">Snow</div>
+        <div class="navTab" onclick="rain()">Rain</div>
+        <div class="navTab" onclick="cloud()">Cloudy</div>
+        <div class="navTab" onclick="city()">DOPE</div>
+
+    </div>
+
+
+
+    <script src="/W2D5/dom/app.js"></script>
+
+
+</body>
+
+</html>

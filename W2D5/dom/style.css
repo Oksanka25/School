@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+    color: lemonchiffon;
+    font-family: “Courier New”, Courier, monospace;
+}
+
+.navContainer {
+    border: solid lemonchiffon;
+    display: flex;
+    padding: 1em;
+    justify-content: space-evenly;
+    border-width: 0.2px;
+}
+
+.navTab {
+    border: solid lemonchiffon;
+    border-width: .2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.navTab:hover {
+    border: solid lime;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 22px;
+    color: lime;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    padding: 0.3em;
+    border: solid lemonchiffon;
+    border-width: 0.2px;
+    margin-top: 12px;
+    background-color: #333C3F;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+span {
+    border: solid lemonchiffon;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 22px;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    padding: 0.3em;
+    border: solid lemonchiffon;
+    border-width: 0.2px;
+    margin-top: 12px;
+    background-color: #333C3F;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.cliqueContent {
+    display: none;
+    position: absolute;
+    padding: 0.3em;
+    border: solid lemonchiffon;
+    border-width: 0.2px;
+    margin-top: 12px;
+    background-color: #333C3F;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.cliqueContent2 {
+    display: block;
+    position: absolute;
+    padding: 1em;
+    border: solid lemonchiffon;
+    border-width: 0.2px;
+    margin-top: 12px;
+    background-color: #333C3F;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.logo {
+    height: 60px;
+}
+
+.navPill {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 9px;
+    background-color: black;
+    color: lime;
+    border: solid lemonchiffon;
+    border-width: 0.2px;
+}
+
+.navPill:hover {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 9px;
+    background-color: green;
+    color: white;
+    border: solid lemonchiffon;
+    border-width: 0.2px;
+}
+
+.topContainer {
+    border: solid lemonchiffon;
+    height: 42vh;
+    background-size: cover;
+    border-width: 0.2px;
+}
+
+.colorPalette {
+    display: flex;
+    border: solid peru;
+    border-width: 0.2px;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.sky {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.sun {
+    background-image: url("https://as1.ftcdn.net/v2/jpg/01/59/64/76/1000_F_159647671_elprHktHdHzUrmZr1dnN5fpeLxEDG35k.jpg");
+}
+
+.snow {
+    background-image: url("https://st3.depositphotos.com/20619270/32219/v/450/depositphotos_322197590-stock-illustration-snow-background-winter-snowfall-vector.jpg");
+}
+
+.rain {
+    background-image: url("https://media.istockphoto.com/photos/rain-water-drop-falling-to-the-floor-in-rainy-season-picture-id522795232?k=20&m=522795232&s=612x612&w=0&h=8W7uSaNAKhFEpnnD5eYZEoANdjlueG79Lw9A-74ye8M=");
+}
+
+.cloud {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/182/167/large_2x/blue-sky-and-white-cloud-background-free-photo.jpg");
+}
+
+.city {
+    background-image: url("https://w0.peakpx.com/wallpaper/903/210/HD-wallpaper-new-york-yankees-flag-mlb-blue-white-metal-background-american-baseball-team-new-york-yankees-logo-usa-baseball-new-york-yankees-golden-logo-ny-yankees.jpg");
+}
