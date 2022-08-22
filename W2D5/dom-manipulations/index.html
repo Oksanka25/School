@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+        <h1>What is the DOM ?</h1>
+        <h4 class="textTop">The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</h4>
+        <hr>
+        <button onclick="populateTextToScreen()"> Interact With Me</button>
+        <div class="screen"></div>
+
+      
+
+<div class="btnContainer">
+    <button class="pmpt" onclick="launchPrompt()">Click To Launch Prompt</button>
+
+    <button class="aLert" onclick="launchAlert()">Click To Launch Alert</button>
+</div>
+
+<hr>
+<button class="addPic" onclick="addPic()">Click To Add Pic</button>
+
+<div class="colorPalette">
+
+    <button class="colorBlock" onclick="changeColor('blue')">Blue</button>
+
+    <button class="colorBlock"onclick="changeColor('green')">Green</button>
+
+    <button class="colorBlock"onclick="changeColor('orange')">Orange</button>
+
+    <button class="colorBlock" onclick="changeColor('grey')">Grey</button>
+
+    <button class="colorBlock"onclick="changeColor('pink')">pink</button>
+
+    <button class="colorBlock"onclick="changeColor('goldenrod')">Gold</button>
+
+</div>
+        
+        <script src="dom.js"></script>
+    </body>
+</html>
