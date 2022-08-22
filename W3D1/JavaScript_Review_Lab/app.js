@@ -291,3 +291,15 @@ function getMultipleLengths(arr) {
 }
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); // => [5, 4, 2, 2, 4]
 
+//  G. maxOfThree
+const maxOfThree = (a, b, c) => {
+    if (a >= b && a >= c) {
+        return `${a} is the largest number`;
+    } else if (b >= a && b >= c) {
+        return `${b} is the largest number`;
+    } else {
+        return `${c} is the largest number`;
+    }
+}
+
+console.log(maxOfThree(6, 9, 1));
