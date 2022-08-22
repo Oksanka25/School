@@ -150,3 +150,19 @@ console.log(ourClass[2]);
 ourClass[4] = 'Octocat';
 ourClass.push('Cloud City');
 console.log(ourClass)
+
+//E. Mix It Up
+
+const myArray = [5, 10, 500, 20];
+
+myArray.push('Aegon');
+myArray.push('Leo');
+myArray.shift(); //removes from the beginning of an Array.
+// myArray.splice(0, 1) //deletes from a specific Array index.
+myArray.unshift('Bob Marley'); //adds new elements to the beginning of an array.
+myArray.pop(); //removes (pops) the last element of an array.
+console.log(myArray);
+let newArr = myArray.reverse();
+console.log(newArr) // reversed an order of myArray
+
+
