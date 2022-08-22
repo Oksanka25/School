@@ -165,4 +165,11 @@ console.log(myArray);
 let newArr = myArray.reverse();
 console.log(newArr) // reversed an order of myArray
 
+// F. Biggie Smalls
+let myNum = 100;
+if (myNum < 100) {
+    console.log(`${myNum} is a little number`)
+} else {
+    console.log(`${myNum} is a big number`)
 
+}
