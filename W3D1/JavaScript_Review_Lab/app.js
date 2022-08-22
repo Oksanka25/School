@@ -278,4 +278,16 @@ function getTwoLengths(str, string) {
     return [firstArr, secondArr]
 
 }
-console.log(getTwoLengths("Hank", "Hippopopalous"))
+console.log(getTwoLengths("Hank", "Hippopopalous")) // => [4, 13]
+
+// F. getMultipleLengths 
+function getMultipleLengths(arr) {
+    newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        let lengthOne = arr[i].split("").length;
+        newArr.push(lengthOne)
+    }
+    return newArr
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); // => [5, 4, 2, 2, 4]
+
