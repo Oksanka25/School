@@ -336,3 +336,6 @@ user.age = user.age + 1;
 console.log(user)
 
 // C. Adding keys and values
+
+user.location = 'Boston, MA';
+console.log(user)
