@@ -317,3 +317,13 @@ const printLongestWord = (arr) => {
 }
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+// Objects
+// A. Make a user object
+
+const user = {
+    name: 'Oscar',
+    email: 'oscar@oscar.com',
+    age: 25,
+    purchased: []
+}
