@@ -96,3 +96,11 @@ for (let i = 1; i <= 100; i++) {
         console.log("Odd")
     }
 }
+
+// C. Give me Five
+
+for (let i = 0; i <= 100; i++) {
+    if (i % 5 === 0) {
+        console.log(` I found a ${i}. High five!`)
+    }
+}
