@@ -327,3 +327,12 @@ const user = {
     age: 25,
     purchased: []
 }
+
+// B. Update the user
+
+user['email'] = 'oscar@gmail.com';
+user.age = user.age + 1;
+
+console.log(user)
+
+// C. Adding keys and values
