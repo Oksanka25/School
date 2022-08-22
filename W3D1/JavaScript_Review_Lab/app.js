@@ -322,7 +322,7 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 // A. Make a user object
 
 const user = {
-    name: 'Oscar',
+    name: 'Oscar Bloom',
     email: 'oscar@oscar.com',
     age: 25,
     purchased: []
@@ -344,3 +344,19 @@ console.log(user)
 
 user.purchased.push('carbohydrates', 'peace of mind', 'Merino jodhpurs');
 console.log(user.purchased[2])
+
+// E. Object-within-object
+
+user.friend = {
+    name: "Grace Hopper",
+    age: 28,
+    location: 'Cambridge, MA',
+    purchased: []
+}
+
+console.log(user.friend.name)
+console.log(user.friend.location)
+user.friend.age = 55;
+user.friend.purchased.push('The One Ring', 'A latte')
+// console.log(user)
+console.log(user.friend.purchased[1])
