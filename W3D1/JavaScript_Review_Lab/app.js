@@ -231,7 +231,14 @@ console.log(thomsCloset)
 
 // IV. Functions
 // A. printGreeting
+
 function printGreeting(name) {
     console.log(` Hello there, ${name}!`);
 }
 printGreeting("Slimer");
+
+// B. printCool
+function printCool(name) {
+    console.log(`${name} is cool!`);
+}
+printGreeting("Captain Reynolds");
