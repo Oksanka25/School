@@ -241,4 +241,12 @@ printGreeting("Slimer");
 function printCool(name) {
     console.log(`${name} is cool!`);
 }
-printGreeting("Captain Reynolds");
+printCool("Captain Reynolds");
+
+// C. calculateCube
+const calculateCube = (num) => {
+    return num * num * num
+}
+
+calculateCube()
+console.log(calculateCube(5)) // => 125
