@@ -268,3 +268,14 @@ console.log(isCharAVowel('e'));
 console.log(isCharAVowel('U'));
 console.log(isCharAVowel('b'));
 console.log(isCharAVowel('Y'));
+
+// E. getTwoLengths
+
+function getTwoLengths(str, string) {
+    let firstArr = str.split("").length;
+    let secondArr = string.split("").length;
+
+    return [firstArr, secondArr]
+
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"))
