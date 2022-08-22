@@ -1,4 +1,4 @@
-
+// I. Variables & Datatypes 
 // A. Q + A
 // How do we assign a value to a variable?
 // With the assignment operator
@@ -64,7 +64,6 @@ isCow();
 
 // E. Driver's Ed
 
-let age;
 function canDrive(age) {
     if (age >= 16) {
         console.log("Here are the keys")
@@ -73,3 +72,17 @@ function canDrive(age) {
     }
 }
 canDrive(15)
+
+// II. Loops
+// A. The basics
+for (let i = 0; i <= 10; i++) {
+    // console.log(i)
+}
+for (let i = 10; i <= 400; i++) {
+    // console.log(i)
+}
+let num = 12;
+while (num < 4000) {
+    console.log(num)
+    num = num + 3;
+}
