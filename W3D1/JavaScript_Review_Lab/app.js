@@ -173,3 +173,14 @@ if (myNum < 100) {
     console.log(`${myNum} is a big number`)
 
 }
+
+// G. Monkey in the Middle
+let number = 6;
+if (number < 5) {
+    console.log(`${number} is a little number`)
+} else if (number > 10) {
+    console.log(`${number} is a big number`)
+} else {
+    console.log('Monkey')
+
+}
