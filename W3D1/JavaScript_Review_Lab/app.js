@@ -250,3 +250,21 @@ const calculateCube = (num) => {
 
 calculateCube()
 console.log(calculateCube(5)) // => 125
+
+
+// D. isVowel
+
+function isCharAVowel(char) {
+    let vowels = ['a', 'e', 'y', 'i', 'u', 'o'];
+    for (let i = 0; i < vowels.length; i++) {
+        if (char.toLowerCase() === vowels[i]) {
+            return `True. ${char} is a vowel`;
+        }
+    }
+    return `False. ${char} is not a vowel`;
+}
+console.log(isCharAVowel('a'));
+console.log(isCharAVowel('e'));
+console.log(isCharAVowel('U'));
+console.log(isCharAVowel('b'));
+console.log(isCharAVowel('Y'));
