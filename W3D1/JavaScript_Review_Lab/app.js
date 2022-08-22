@@ -126,8 +126,19 @@ console.log(savingsAccount) //10,100
 
 // A. Talk about it:
 // What are the things in an array called?
-// An element
+// - An element
 // Do Arrays guarantee those things will be in order?
-// No, we can use different sort methods to put it in order we need. 
+// - No, we can use different sort methods to put it in order we need. 
 // What real-life thing could you model with an array?
-// Any kind of list (list of fruits, list of products, etc) that gathers similar items/elements at one place.
+// - Any kind of list (list of fruits, list of products, etc) that gathers similar items/elements at one place.
+
+// B. Easy Does It
+
+let quotes = ['Quote One', 'Quote Two', 'Quote Three'];
+
+// C. Accessing elements
+
+const randomThings = [1, 10, "Hello", true];
+console.log(randomThings[0])
+randomThings[2] = 'World'
+console.log(randomThings)
