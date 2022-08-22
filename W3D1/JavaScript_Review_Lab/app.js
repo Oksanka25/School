@@ -86,3 +86,13 @@ while (num < 4000) {
     console.log(num)
     num = num + 3;
 }
+
+// B. Get even
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        console.log(`${i} is an even number`)
+    } else {
+        console.log("Odd")
+    }
+}
