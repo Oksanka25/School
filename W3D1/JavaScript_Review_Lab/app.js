@@ -228,3 +228,10 @@ thomsCloset[2][1] // accessories => "wool scarf"
 console.log(`Tom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][1]} and ${thomsCloset[2][1]}`);
 thomsCloset[1].splice(2, 1, 'Footie Pajamas'); // "PJs" => 'Footie Pajamas'
 console.log(thomsCloset)
+
+// IV. Functions
+// A. printGreeting
+function printGreeting(name) {
+    console.log(` Hello there, ${name}!`);
+}
+printGreeting("Slimer");
