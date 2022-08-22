@@ -115,9 +115,19 @@ let bankAccount = 0;
 for (let i = 1; i <= 10; i++) {
     bankAccount += i
 }
-console.log(bankAccount)
+console.log(bankAccount) //55
 let savingsAccount = 0;
 for (let i = 1; i <= 100; i++) {
     savingsAccount += i * 2
 }
-console.log(savingsAccount)
+console.log(savingsAccount) //10,100
+
+// III. Arrays & Control flow
+
+// A. Talk about it:
+// What are the things in an array called?
+// An element
+// Do Arrays guarantee those things will be in order?
+// No, we can use different sort methods to put it in order we need. 
+// What real-life thing could you model with an array?
+// Any kind of list (list of fruits, list of products, etc) that gathers similar items/elements at one place.
