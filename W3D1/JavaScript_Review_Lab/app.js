@@ -49,3 +49,18 @@ console.log(e === 'Kevin');
 console.log(a + b == c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
 console.log(a * a == d); // note: the answer is a simple arithmetic equation, not something "weird"
 console.log(48 == '48');
+
+// D. The farm
+
+let animal = 'cow';
+function isCow() {
+    if (animal === 'cow') {
+        console.log("Moooo")
+    } else {
+        console.log("Hey! You're not a cow")
+    }
+}
+
+isCow();
+
+
