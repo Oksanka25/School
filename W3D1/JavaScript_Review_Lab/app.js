@@ -60,7 +60,16 @@ function isCow() {
         console.log("Hey! You're not a cow")
     }
 }
-
 isCow();
 
+// E. Driver's Ed
 
+let age;
+function canDrive(age) {
+    if (age >= 16) {
+        console.log("Here are the keys")
+    } else {
+        console.log("Sorry, you're too young.")
+    }
+}
+canDrive(15)
