@@ -322,7 +322,7 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 // A. Make a user object
 
 const user = {
-    name: 'Oscar Bloom',
+    name: 'oscar bloom',
     email: 'oscar@oscar.com',
     age: 25,
     purchased: []
@@ -370,3 +370,30 @@ for (let i = 0; i < user.purchased.length; i++) {
 for (let i = 0; i < user.friend.purchased.length; i++) {
     console.log(user.friend.purchased[i])
 }
+
+// G. Functions can operate on objects
+//1.
+function updateUser() {
+    user.age = user.age + 1;
+    // To make First Letters in  the string UpperCase
+    const strToArr = user.name.split(' ');
+    const allFirstToUC = strToArr.map(word => word[0].toUpperCase() + word.substring(1));
+    const newStr = allFirstToUC.join(' ')
+    user.name = newStr;
+    // To make ALL letters in the string uppercase
+    // user.name = user.name.toUpperCase();
+}
+
+updateUser()
+console.log(user.name)
+
+//2.
+function oldAndLoud(person) {
+    person.age = person.age + 1;
+    person.name = person.name.toUpperCase();
+    // console.log('G-2.' + person.age)
+    // console.log('G-2.' + person.name)
+
+}
+oldAndLoud(user)
+// console.log(oldAndLoud(user))
