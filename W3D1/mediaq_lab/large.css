@@ -1,0 +1,97 @@
+body {
+    /* background-color: rgb(237, 236, 212); */
+    background-image: url("https://www.wallpapers.net/web/wallpapers/spot-light-background-hd-wallpaper/thumbnail/md.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.main-container {
+    /* border: 3px solid black; */
+    display: flex;
+    width: 100%;
+}
+
+.movie-box {
+    margin: 10%;
+}
+
+.movie-image {
+    /* border: 3px solid rgb(215, 29, 29); */
+    margin: 12% 0 0 6%;
+    height: 70vh;
+}
+
+.image-small {
+    visibility: hidden;
+    display: none;
+
+}
+
+.image-mid {
+    visibility: hidden;
+    display: none;
+
+}
+
+.image-lg {
+    visibility: visible;
+    /* height: 70%; */
+    object-fit: cover;
+}
+
+.info-text-small {
+    display: none;
+    visibility: hidden;
+}
+
+.info-text-mid {
+    display: none;
+    visibility: hidden;
+}
+
+.info-text-lg {
+    visibility: visible;
+    background-color: rgb(255, 248, 170, 0.5);
+    padding: 8px;
+}
+
+.headings-container {
+    margin: 5px;
+}
+
+.heading-small {
+    visibility: hidden;
+    display: none;
+}
+
+.heading-mid {
+    visibility: hidden;
+    display: none;
+}
+
+.heading-lg {
+    visibility: visible;
+    color: blue;
+}
+
+.video-small {
+    display: none;
+}
+
+.video-mid {
+    display: none;
+}
+
+.video-lg {
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 6%;
+}
+
+.explore-btn {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}

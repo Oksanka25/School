@@ -1,0 +1,57 @@
+/* body {
+    background-color: rgb(127, 242, 255);
+}
+
+.main-container {
+    border: 3px solid black;
+    display: block;
+    width: 100%;
+    /* height: 90vh; */
+}
+
+/*
+.movie-image {
+    border: 3px solid rgb(215, 29, 29);
+}
+
+.image-small {
+    visibility: visible;
+    height: 70%;
+}
+
+.image-mid {
+    visibility: hidden;
+}
+
+.image-lg {
+    visibility: hidden;
+}
+
+
+.info-text-small {
+    visibility: visible;
+}
+
+.info-text-mid {
+    /* display: none; */
+/* visibility: hidden; */
+}
+
+/*
+.info-text-lg {
+    visibility: hidden;
+}
+
+.heading-small {
+    visibility: visible;
+    color: blue;
+}
+
+.heading-mid {
+    visibility: hidden;
+}
+
+.heading-lg {
+    visibility: hidden;
+
+} */
