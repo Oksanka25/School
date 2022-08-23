@@ -40,15 +40,17 @@ const e = 'Kevin';
 
 console.log(a < b);
 console.log(c > d);
-console.log('Name' == 'Name');
+console.log('Name' === 'Name');
 // FOR THE NEXT TWO, USE ONLY && OR ||
 console.log(true || false);
 console.log(false || false || false || false || false || true);
 console.log(false == false)
 console.log(e === 'Kevin');
 console.log(a + b == c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+// a && b < c
 console.log(a * a == d); // note: the answer is a simple arithmetic equation, not something "weird"
 console.log(48 == '48');
+
 
 // D. The farm
 
@@ -64,14 +66,22 @@ isCow();
 
 // E. Driver's Ed
 
-function canDrive(age) {
-    if (age >= 16) {
-        console.log("Here are the keys")
-    } else {
-        console.log("Sorry, you're too young.")
-    }
+// function canDrive(age) {
+//     if (age >= 16) {
+//         console.log("Here are the keys")
+//     } else {
+//         console.log("Sorry, you're too young.")
+//     }
+// }
+// canDrive(15)
+
+let age = 30;
+if (age >= 16) {
+    console.log("Here are the keys")
+} else {
+    console.log("Sorry, you're too young.")
 }
-canDrive(15)
+
 
 // II. Loops
 // A. The basics
@@ -83,7 +93,7 @@ for (let i = 10; i <= 400; i++) {
 }
 let num = 12;
 while (num < 4000) {
-    console.log(num)
+    // console.log(num)
     num = num + 3;
 }
 
@@ -116,6 +126,7 @@ for (let i = 1; i <= 10; i++) {
     bankAccount += i
 }
 console.log(bankAccount) //55
+
 let savingsAccount = 0;
 for (let i = 1; i <= 100; i++) {
     savingsAccount += i * 2
@@ -164,6 +175,7 @@ myArray.pop(); //removes (pops) the last element of an array.
 console.log(myArray);
 let newArr = myArray.reverse();
 console.log(newArr) // reversed an order of myArray
+
 
 // F. Biggie Smalls
 let myNum = 100;
@@ -407,7 +419,7 @@ const cat1 = {
     breed: 'Scottish Folded',
     age: 3
 }
-console.log(cat1.age, cat1.breed)
+// console.log(cat1.age, cat1.breed)
 
 const cat2 = {
     name: 'Tom',
@@ -423,10 +435,20 @@ function combineCats(mama, papa) {
         age: 1,
         breed: `${mama.breed}-${papa.breed}`
     }
-    console.log(child)
+    // console.log(child)
+    return child
 
 }
+// let newCat = combineCats(cat1, cat2)
+// console.log("new", newCat);
+
 combineCats(cat1, cat2);
+// console.log(combineCats
+//     (combineCats(cat1, cat2),
+//         combineCats(cat1, cat2))
+//  )
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))))
+
 // combineCats({
 //     name: 'Star',
 //     breed: 'Scottish Folded',
@@ -436,13 +458,3 @@ combineCats(cat1, cat2);
 //     breed: 'British Straight',
 //     age: 4
 // });
-
-
-function catCombinator() {
-    // let newKitty = {
-    //     name:
-    // }
-
-    // console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))))
-}
-
