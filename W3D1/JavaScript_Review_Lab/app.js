@@ -13,7 +13,7 @@
 // What is pseudocoding and why should you do it?
 // Pseudocode is an informal way of programming description that does not require any strict programming language syntax or underlying technology considerations. It is used for creating an outline or a rough draft of a program. Pseudocode summarizes a program's flow, but excludes underlying details.
 // What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
-//It's better to go through most of details pseudocoding before start real coding. it usually saves time 
+//It's better to go through most of details pseudocoding before start real coding. it usually saves time at at the end - 60%/40%
 
 // B. Strings
 
@@ -397,3 +397,52 @@ function oldAndLoud(person) {
 }
 oldAndLoud(user)
 // console.log(oldAndLoud(user))
+
+
+// Cat Combinator
+// 1. Mama cat
+
+const cat1 = {
+    name: 'Star',
+    breed: 'Scottish Folded',
+    age: 3
+}
+console.log(cat1.age, cat1.breed)
+
+const cat2 = {
+    name: 'Tom',
+    breed: 'British Straight',
+    age: 4
+}
+
+
+function combineCats(mama, papa) {
+    // console.log(mama, papa) 
+    let child = {
+        name: mama.name + papa.name,
+        age: 1,
+        breed: `${mama.breed}-${papa.breed}`
+    }
+    console.log(child)
+
+}
+combineCats(cat1, cat2);
+// combineCats({
+//     name: 'Star',
+//     breed: 'Scottish Folded',
+//     age: 3
+// }, {
+//     name: 'Tom',
+//     breed: 'British Straight',
+//     age: 4
+// });
+
+
+function catCombinator() {
+    // let newKitty = {
+    //     name:
+    // }
+
+    // console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))))
+}
+

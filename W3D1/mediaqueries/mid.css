@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+    color: salmon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.parentContainer {
+    border: solid salmon;
+    height: 32vh;
+    width: 100%;
+
+
+}
+
+.luigiText {
+    font-size: 42px;
+    margin: 50px;
+}
+
+.luigi {
+    width: 270px;
+    height: 100%;
+    border: solid white;
+}
+
+.textBox {
+    display: flex;
+    padding: 15px;
+}
+
+.coin {
+    display: none;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parentContainer {
+    border: none;
+    padding: 12px;
+    height: 32vh;
+    width: 100%;
+    padding-left: 25%;
+
+}
+
+.luigi {
+    width: 250px;
+    height: 100%;
+    border: solid white;
+}
+
+.luigiText {
+    /* font-size:42px; */
+}
+
+.textBox {
+    display: none;
+    padding: 15px;
+}
+
+.coin {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
