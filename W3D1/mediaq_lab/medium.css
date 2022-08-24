@@ -1,58 +1,107 @@
-/* body {
-    background-color: rgb(240, 238, 116);
+body {
+    /* background-color: rgb(237, 236, 212); */
+    background-image: url("https://www.wallpapers.net/web/wallpapers/spot-light-background-hd-wallpaper/thumbnail/md.jpg");
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    width: 100%;
+    background-size: cover;
 }
 
 .main-container {
-    border: 3px solid black;
-    display: block;
+    display: flex;
     width: 100%;
-    /* height: 90vh; */
-/*
+}
+
+.movie-box {
+    margin: 10%;
 }
 
 .movie-image {
-    border: 3px solid rgb(215, 29, 29);
+    margin: 12% 0 0 6%;
+    height: 70vh;
 }
 
+/* IMAGE */
 .image-small {
+    display: none;
     visibility: hidden;
+
 }
 
 .image-mid {
+    margin-top: 50px;
+    align-items: center;
     visibility: visible;
-    height: 70%;
+    display: flex;
+    height: 500px;
 }
 
 .image-lg {
+    display: none;
     visibility: hidden;
 }
 
+/* INFO BLOCK */
 
 .info-text-small {
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
 }
 
 .info-text-mid {
     visibility: visible;
-    background-color: aquamarine;
+    background-color: rgb(255, 248, 170, 0.5);
+    padding: 8px;
+    display: block;
 }
 
 .info-text-lg {
-    /* display: none; */
-/*  visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
+}
+
+
+/* HEADINGS */
+
+.headings-container {
+    margin: 5px;
 }
 
 .heading-small {
     visibility: hidden;
+    display: none;
 }
 
 .heading-mid {
     visibility: visible;
     color: blue;
-    margin: 5px;
+    display: block;
 }
 
 .heading-lg {
     visibility: hidden;
+    display: none;
+}
 
-} */
+/* VIDEO */
+
+.video-small {
+    display: none;
+}
+
+.video-mid {
+    margin-top: 6%;
+    display: block;
+}
+
+.video-lg {
+    display: none;
+}
+
+
+
+.explore-btn {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
