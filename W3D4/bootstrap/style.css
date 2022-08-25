@@ -1,5 +1,6 @@
 body {
     background-color: lightcyan;
+    margin: 15px;
 }
 
 .logo {
@@ -13,10 +14,22 @@ body {
 }
 
 #carouselExampleCaptions {
-    background-color: rgb(238, 135, 135);
-    margin-top: 6%;
+    background-color: rgba(247, 51, 51, 0.7);
+    margin: 6% 3%;
 
 }
+
+h3 {
+    margin-top: 6px;
+}
+
+a {
+    color: black;
+}
+
+/* #carouselExampleCaptions {
+    margin-top: ;
+} */
 
 .carousel-caption {
     color: black;
