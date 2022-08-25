@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg" style="background-color: white; border-radius: 7px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="https://logos-world.net/wp-content/uploads/2021/08/CVS-Pharmacy-Logo.png" alt="CVS Logo"
@@ -48,6 +48,7 @@
                             aria-expanded="false">
                             MinuteClinic
                         </a>
+
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="https://www.cvs.com/minuteclinic/clinic-visit">In-Person
                                     Visit</a></li>
@@ -69,6 +70,9 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-danger" type="submit">Search</button>
@@ -78,6 +82,7 @@
     </nav>
 
     <h3> Shop health & wellness support </h3>
+
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -183,6 +188,114 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div>
+
+    <!-- =============== -->
+    <h3>Fill prescriptions your way</h3>
+    <div class="all-cards">
+        <div class="card" style="width: 18rem; ">
+            <img src="https://www.cvs.com/bizcontent/home/New_Design/HP00002/images/wk35/transferrx.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Get started online</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat dolor
+                    eius
+                    a facilis. Praesentium dolores id quod blanditiis cumque qui necessitatibus iste at debitis?
+                    Consectetur
+                    quae repudiandae ab fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://www.cvs.com/pharmacy/rxtransfer/transferv2?icid=cvs-home-s2-l1-transfer-rx"
+                    class="btn btn-danger">Transfer your prescriptions ></a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.cvs.com/bizcontent/home/New_Design/HP00002/images/wk35/managerx.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Manage your prescriptions</h5>
+                <p class="card-text">We help you refill prescriptions for you and your family. How you
+                    want and when you wantReadyFill® is a CVS Pharmacy® service that refills select ongoing
+                    prescriptions so they're ready when you need them. We'll let you know when they're ready — no need
+                    to call or order refills.</p>
+                <a href="https://www.cvs.com/pharmacy/v2/#/pharmacy?icid=cvs-home-s2-l2-manage-rx"
+                    class="btn btn-danger">Refill prescriptions ></a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.cvs.com/bizcontent/home/New_Design/HP00002/images/wk35/savingsrx.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">85% of CVS® prescriptions cost less than $10/month*</h5>
+                <p class="card-text">Using our proprietary search tool, your pharmacist can search coupons, insurance
+                    and other lower-cost options that could save you money. Our pharmacists work with your doctor to
+                    navigate therapeutic alternatives and other options that may help you save.</p>
+                <a href="https://www.cvs.com/content/prescription-savings?icid=cvs-home-s2-l3-rx-savings-tool"
+                    class="btn btn-danger">Try our savings tool > </a>
+            </div>
+        </div>
+    </div>
+
+    <span class="badge text-bg-danger" style="font-size:16px; padding: 4px 14px 4px 14 px">Danger Zone
+        <h3> Deals and Savings</h3>
+    </span>
+    <div class="accordion" id="accordionExample" style="background-color: red;">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne" style="color: red;">
+                    Get the care you may need from MinuteClinic®
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Get care quickly from the comfort of home
+                    Visit with a licensed provider over video in minutes. We're here 24/7 and on holidays, footnote 11
+                    to help you with common illnesses or medicine refills.
+                    During the day, let us help with mental health and chronic diseases.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: red;">
+                    CarePass®
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Join CarePass and get 20% off CVS Health® brand products, FREE same-day Rx delivery, FREE shipping
+                    from CVS.com® and access to our 24/7 Pharmacist Helpline.
+                    Plus, get a $10 monthly promo reward as a thank you for joining!
+                </div>
+                <a href="https://www.cvs.com/carepass/join?icid=cvs-home-s8-l1-cp-fmf">
+                    <button type="button" class="btn btn-danger">Try your first month for FREE</button>
+                </a>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                    style="color: red;">
+                    ExtraCare®
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    ExtraCare just got even better!
+                    New! Members get 2% back in ExtraBucks Rewards® even faster.* Enjoy a new birthday treat, too.
+
+                    To join ExtraCare, start by creating an account.
+                </div>
+                <a
+                    href="https://www.cvs.com/retail-easy-account/create-account?page=/account/signup.jsp&icid=cvsheader:createaccount&screenname=/extracare/home">
+                    <button type="button" class="btn btn-danger">Create an account</button>
+                </a>
+            </div>
+        </div>
     </div>
 
 </body>

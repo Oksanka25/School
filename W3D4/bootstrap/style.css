@@ -15,9 +15,15 @@ body {
 
 #carouselExampleCaptions {
     background-color: rgba(247, 51, 51, 0.7);
-    margin: 6% 3%;
+    margin: 6% 0%;
+    border-radius: 9px;
 
 }
+
+#carouselExampleFade {
+    margin: 6% 4%;
+}
+
 
 h3 {
     margin-top: 6px;
@@ -26,10 +32,6 @@ h3 {
 a {
     color: black;
 }
-
-/* #carouselExampleCaptions {
-    margin-top: ;
-} */
 
 .carousel-caption {
     color: black;
@@ -40,4 +42,28 @@ a {
     height: 500px;
     width: 20px;
     object-fit: fit;
+}
+
+.all-cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 5px;
+}
+
+.badge {
+    margin: 30px;
+    justify-content: center;
+}
+
+#accordionExample {
+    /* margin: 6% 3%; */
+}
+
+.accordion-item button {
+    margin-left: 10px;
 }
