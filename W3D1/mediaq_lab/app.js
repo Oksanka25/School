@@ -5,21 +5,21 @@
 const exploreTextL = () => {
     let exploreScreen = document.querySelector(".explore-screen-lg");
     let text =
-        " To explore more check out Netflix or IMDB"
+        " To explore more check out IMDB"
     exploreScreen.innerHTML = text;
     exploreScreen.style.display = "block";
 };
 const exploreTextM = () => {
     let exploreScreen = document.querySelector(".explore-screen-mid");
     let text =
-        " To explore more check out Netflix or IMDB"
+        " To explore more check out Netflix"
     exploreScreen.innerHTML = text;
     exploreScreen.style.display = "block";
 };
 const exploreTextS = () => {
     let exploreScreen = document.querySelector(".explore-screen-small");
     let text =
-        " To explore more check out Netflix or IMDB"
+        " To explore more check out AmazonMovies"
     exploreScreen.innerHTML = text;
     exploreScreen.style.display = "block";
 };

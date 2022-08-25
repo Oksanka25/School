@@ -74,6 +74,7 @@ body {
     visibility: visible;
     color: blue;
     display: block;
+    font-family: 'Rubik Distressed', cursive;
 }
 
 .heading-mid {

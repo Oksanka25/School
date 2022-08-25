@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+
 body {
     /* background-color: rgb(237, 236, 212); */
     background-image: url("https://www.wallpapers.net/web/wallpapers/spot-light-background-hd-wallpaper/thumbnail/md.jpg");
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-size: cover;
 }
@@ -73,6 +76,7 @@ body {
 .heading-lg {
     visibility: visible;
     color: blue;
+    font-family: 'Rubik Distressed', cursive;
 }
 
 .video-small {
@@ -142,7 +146,7 @@ button {
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system, sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: -.24px;
     margin: 0;
