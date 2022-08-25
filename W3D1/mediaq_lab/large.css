@@ -89,8 +89,87 @@ body {
     margin-top: 6%;
 }
 
-.explore-btn {
+.explore-btn-lg {
+    margin: 25px;
+}
+
+.explore-btn-lg button {
     display: flex;
-    justify-content: center;
-    margin: 30px;
+}
+
+
+.explore-screen-lg {
+    /* border: solid black; */
+    height: 10vh;
+    margin: 5px;
+    border-radius: 7px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: hsl(195, 72%, 79%, 0.4);
+    padding: 2em;
+    color: rgb(27, 27, 26);
+    font-size: 22px;
+    display: none;
+}
+
+.explore-btn-mid {
+    visibility: hidden;
+    display: none;
+}
+
+.explore-screen-mid {
+    visibility: hidden;
+    display: none;
+}
+
+.explore-btn-small {
+    visibility: hidden;
+    display: none;
+}
+
+.explore-screen-small {
+    visibility: hidden;
+    display: none;
+}
+
+button {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+button:active {
+    transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+    button {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+    }
 }

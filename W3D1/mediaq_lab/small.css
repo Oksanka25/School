@@ -51,6 +51,9 @@ body {
     background-color: rgb(255, 248, 170, 0.5);
     padding: 8px;
     display: flex;
+    /* text-align: justify;
+    align-items: center;
+    justify-content: center; */
 }
 
 .info-text-mid {

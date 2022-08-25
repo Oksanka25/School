@@ -9,7 +9,7 @@
     <link rel="stylesheet" media="screen and (max-width: 1800px)" href="/W3D1/mediaq_lab/large.css" />
     <link rel="stylesheet" media="screen and (max-width: 1200px)" href="/W3D1/mediaq_lab/medium.css" />
     <link rel="stylesheet" media="screen and (max-width: 800px)" href="/W3D1/mediaq_lab/small.css" />
-    <script src="/W3D1/mediaqueries/app.js" defer></script>
+    <script src="/W3D1/mediaq_lab/app.js" defer></script>
 </head>
 
 <body>
@@ -61,8 +61,18 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="explore-btn">
-                <button> EXPLORE </button>
+            <div class="explore-btn-small">
+                <button onclick="exploreTextS()"> EXPLORE </button>
+                <div class="explore-screen-small" onclick="hideTextL()"></div>
+            </div>
+            <div class="explore-btn-mid">
+                <button onclick="exploreTextM()"> EXPLORE </button>
+                <div class="explore-screen-mid" onclick="hideTextL()"></div>
+            </div>
+            <div class="explore-btn-lg">
+                <button onclick="exploreTextL()"> EXPLORE </button>
+                <div class="explore-screen-lg" onclick="hideTextL()">
+                </div>
             </div>
         </div>
     </div>
