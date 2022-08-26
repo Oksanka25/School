@@ -6,6 +6,12 @@ h1 {
     text-align: center;
     font-size: 4em;
     color: #0f0e0e;
+    margin-bottom: 1%
+}
+
+.score {
+    margin-bottom: 7%;
+    display: table;
 }
 
 .square {

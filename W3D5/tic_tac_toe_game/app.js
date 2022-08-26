@@ -81,6 +81,10 @@ const checkResult = () => {
     if (activeGame === true) {
         for (i = 0; i < arrSq.length; i++) {
             if (squares[arrSq[i][0]].innerHTML == "X" && squares[arrSq[i][1]].innerHTML == "X" && squares[arrSq[i][2]].innerHTML == "X") {
+                squares[arrSq[i][0]].style.backgroundColor = "green"
+                squares[arrSq[i][1]].style.backgroundColor = "green"
+                squares[arrSq[i][2]].style.backgroundColor = "green"
+
                 result = "Player X wins!";
                 activeGame = false;
                 scoreX();
@@ -88,6 +92,9 @@ const checkResult = () => {
                 break;
 
             } else if (squares[arrSq[i][0]].innerHTML == "O" && squares[arrSq[i][1]].innerHTML == "O" && squares[arrSq[i][2]].innerHTML == "O") {
+                squares[arrSq[i][0]].style.backgroundColor = "green"
+                squares[arrSq[i][1]].style.backgroundColor = "green"
+                squares[arrSq[i][2]].style.backgroundColor = "green"
                 result = "Player O wins!";
                 scoreO();
                 prepareResult(result);
@@ -111,6 +118,7 @@ startGame.addEventListener("click", () => {
 
 resetGame.addEventListener("click", () => {
     squares.forEach(square => {
+        square.style.backgroundColor = "rgb(246, 228, 228)"
         square.innerHTML = "";
         illegal.innerHTML = "";
         moves = 0;
