@@ -11,11 +11,32 @@ let xCount = document.querySelector(".xwins")
 let oCount = document.querySelector(".owins")
 let xWins = 0;
 let oWins = 0;
+let gameSound;
 
 function changePlayer() {
     if (player === "X") player = "O";
     else if (player === "O") player = "X";
 }
+
+// squares.bgColor = 'red';
+// setInterval("Timer()", 50);
+// x = 1;
+// function Timer() {
+//     set = 1;
+//     if (x == 0 && set == 1) {
+//         squares.bgColor = 'white';
+//         squares.style.backgroundColor = 'red';
+//         x = 1;
+//         set = 0;
+//     }
+//     if (x == 1 && set == 1) {
+//         squares.bgColor = 'white';
+//         squares.style.backgroundColor = 'red';
+//         x = 0;
+//         set = 0;
+//     }
+// }
+
 
 squares.forEach(square => {
     square.addEventListener("click", () => {
@@ -25,7 +46,13 @@ squares.forEach(square => {
             moves++;
             if (moves === 9) illegal.innerHTML = "It's a tie! Reset a game and start over!"
         } else if (square.innerHTML) {
-            illegal.innerHTML = "Don't cheat!"
+            illegal.innerHTML = "Don't cheat!";
+            square.style.backgroundColor = "red"
+            setInterval(
+                function () {
+                    let bgColor = "rgb(246, 228, 228)";
+                    square.style.backgroundColor = bgColor;
+                }, 1000);
         } else {
             illegal.innerHTML = "Someone has already won! Reset the game!"
         }
@@ -64,6 +91,37 @@ const checkResult = () => {
         }
     }
 }
+
+const prepareResult = (winner) => {
+    illegal.innerHTML = winner;
+}
+
+startGame.addEventListener("click", () => {
+    for (let i = 0; i < squares.length; i++) {
+        squares[i].classList.remove("hidden")
+    }
+    activeGame = true;
+})
+
+resetGame.addEventListener("click", () => {
+    squares.forEach(square => {
+        square.innerHTML = "";
+        illegal.innerHTML = "";
+        moves = 0;
+    })
+    activeGame = true;
+})
+
+function scoreX() {
+    xWins++;
+    xCount.innerHTML = `Player X: ${xWins}`
+}
+
+function scoreO() {
+    oWins++;
+    oCount.innerHTML = `Player O: ${oWins}`
+}
+
 
 
 
