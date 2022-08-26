@@ -18,24 +18,6 @@ function changePlayer() {
     else if (player === "O") player = "X";
 }
 
-// squares.bgColor = 'red';
-// setInterval("Timer()", 50);
-// x = 1;
-// function Timer() {
-//     set = 1;
-//     if (x == 0 && set == 1) {
-//         squares.bgColor = 'white';
-//         squares.style.backgroundColor = 'red';
-//         x = 1;
-//         set = 0;
-//     }
-//     if (x == 1 && set == 1) {
-//         squares.bgColor = 'white';
-//         squares.style.backgroundColor = 'red';
-//         x = 0;
-//         set = 0;
-//     }
-// }
 
 
 squares.forEach(square => {
@@ -99,6 +81,7 @@ const checkResult = () => {
                 scoreO();
                 prepareResult(result);
                 activeGame = false;
+                newGame()
                 break;
             }
         }
@@ -113,6 +96,8 @@ startGame.addEventListener("click", () => {
     for (let i = 0; i < squares.length; i++) {
         squares[i].classList.remove("hidden")
     }
+    xCount.classList.remove("player")
+    oCount.classList.remove("player")
     activeGame = true;
 })
 
