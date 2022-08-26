@@ -11,7 +11,7 @@ h1 {
 
 .score {
     margin-bottom: 7%;
-    display: table;
+    display: block;
 }
 
 .square {
@@ -20,10 +20,17 @@ h1 {
     height: 150px;
     width: 33%;
     /* color: rgb(237, 75, 75); */
+    /* color: rgb(187, 235, 131); */
 
     background-color: rgb(246, 228, 228);
 }
 
+
+.one,
+.two,
+.three {
+    margin-top: 5%;
+}
 
 .one,
 .four {

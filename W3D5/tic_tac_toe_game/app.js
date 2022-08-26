@@ -46,7 +46,7 @@ squares.forEach(square => {
             moves++;
             if (moves === 9) illegal.innerHTML = "It's a tie! Reset a game and start over!"
         } else if (square.innerHTML) {
-            square.style.backgroundColor = "red"
+            square.style.backgroundColor = "rgb(237, 75, 75)"
             illegal.innerHTML = "Don't cheat!";
             illegal.style.setProperty('--animate-duration', '2s');
             illegal.classList.add('animate__animated', 'animate__lightSpeedInLeft')
@@ -81,9 +81,9 @@ const checkResult = () => {
     if (activeGame === true) {
         for (i = 0; i < arrSq.length; i++) {
             if (squares[arrSq[i][0]].innerHTML == "X" && squares[arrSq[i][1]].innerHTML == "X" && squares[arrSq[i][2]].innerHTML == "X") {
-                squares[arrSq[i][0]].style.backgroundColor = "green"
-                squares[arrSq[i][1]].style.backgroundColor = "green"
-                squares[arrSq[i][2]].style.backgroundColor = "green"
+                squares[arrSq[i][0]].style.backgroundColor = "rgb(187, 235, 131)"
+                squares[arrSq[i][1]].style.backgroundColor = "rgb(187, 235, 131)"
+                squares[arrSq[i][2]].style.backgroundColor = "rgb(187, 235, 131)"
 
                 result = "Player X wins!";
                 activeGame = false;
@@ -92,9 +92,9 @@ const checkResult = () => {
                 break;
 
             } else if (squares[arrSq[i][0]].innerHTML == "O" && squares[arrSq[i][1]].innerHTML == "O" && squares[arrSq[i][2]].innerHTML == "O") {
-                squares[arrSq[i][0]].style.backgroundColor = "green"
-                squares[arrSq[i][1]].style.backgroundColor = "green"
-                squares[arrSq[i][2]].style.backgroundColor = "green"
+                squares[arrSq[i][0]].style.backgroundColor = "rgb(187, 235, 131)"
+                squares[arrSq[i][1]].style.backgroundColor = "rgb(187, 235, 131)"
+                squares[arrSq[i][2]].style.backgroundColor = "rgb(187, 235, 131)"
                 result = "Player O wins!";
                 scoreO();
                 prepareResult(result);

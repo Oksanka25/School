@@ -13,12 +13,13 @@
 
 <body>
     <h1>Tic-Tac-Toe</h1>
-    <div class="score">
-        <div class="xwins"> Player X total:</div>
-        <div class="owins"> Player O total:</div>
-    </div>
+    <!-- <div class="score">
+        <div class="xwins"> Player X:</div>
+        <div class="owins"> Player O:</div>
+    </div> -->
 
     <div class="board">
+        <div class="xwins"> Player X:</div>
         <div class="row">
             <div class="hidden square one"></div>
             <div class="hidden square two"></div>
@@ -34,7 +35,10 @@
             <div class="hidden square eight"></div>
             <div class="hidden square nine"></div>
         </div>
+        <div class="owins"> Player O:</div>
     </div>
+
+    <div class="illegal"> </div>
 
     <div class="buttons">
         <button class="start">Start game</button>
@@ -42,7 +46,6 @@
         <button class="reset">Reset game</button>
     </div>
 
-    <div class="illegal"> </div>
 
 
 </body>
