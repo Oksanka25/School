@@ -11,3 +11,10 @@ let xCount = document.querySelector(".xwins")
 let oCount = document.querySelector(".owins")
 let xWins = 0;
 let oWins = 0;
+
+function changePlayer() {
+    if (player === "X") player = "O";
+    else if (player === "O") player = "X";
+}
+
+
