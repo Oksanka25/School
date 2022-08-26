@@ -46,13 +46,19 @@ squares.forEach(square => {
             moves++;
             if (moves === 9) illegal.innerHTML = "It's a tie! Reset a game and start over!"
         } else if (square.innerHTML) {
-            illegal.innerHTML = "Don't cheat!";
             square.style.backgroundColor = "red"
-            setInterval(
+            illegal.innerHTML = "Don't cheat!";
+            illegal.style.setProperty('--animate-duration', '2s');
+            illegal.classList.add('animate__animated', 'animate__lightSpeedInLeft')
+
+            setTimeout(
                 function () {
                     let bgColor = "rgb(246, 228, 228)";
                     square.style.backgroundColor = bgColor;
-                }, 1000);
+                    illegal.innerHTML = " "
+                    console.log(illegal.innerHTML);
+                    illegal.classList.remove('animate__animated', 'animate__lightSpeedInLeft')
+                }, 2000);
         } else {
             illegal.innerHTML = "Someone has already won! Reset the game!"
         }
