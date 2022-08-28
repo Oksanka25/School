@@ -13,6 +13,26 @@ let xWins = 0;
 let oWins = 0;
 let gameSound;
 
+let winSound = new Howl({
+    src: ['/W3D5/tic_tac_toe_game/sound/win.wav'],
+    volume: 1.0,
+    // onend: function () {
+    //     alert('Reset the game to play again!');
+    // }
+});
+let tieSound = new Howl({
+    src: ['/W3D5/tic_tac_toe_game/sound/tie.wav'],
+    volume: 1.0,
+    // onend: function () {
+    //     alert('Reset the game to try again!');
+    // }
+});
+let moveSound = new Howl({
+    src: ['/W3D5/tic_tac_toe_game/sound/move.wav'],
+    volume: 1.0
+});
+
+
 function changePlayer() {
     if (player === "X") player = "O";
     else if (player === "O") player = "X";
@@ -22,11 +42,15 @@ function changePlayer() {
 
 squares.forEach(square => {
     square.addEventListener("click", () => {
+        moveSound.play()
         if (square.innerHTML === "" && activeGame === true) {
             square.innerHTML = player;
             changePlayer();
             moves++;
-            if (moves === 9) illegal.innerHTML = "It's a tie! Reset a game and start over!"
+            if (moves === 9) {
+                illegal.innerHTML = "It's a tie! Reset a game and start over!"
+                tieSound.play()
+            }
         } else if (square.innerHTML) {
             square.style.backgroundColor = "rgb(237, 75, 75)"
             illegal.innerHTML = "Don't cheat!";
@@ -63,21 +87,22 @@ const checkResult = () => {
     if (activeGame === true) {
         for (i = 0; i < arrSq.length; i++) {
             if (squares[arrSq[i][0]].innerHTML == "X" && squares[arrSq[i][1]].innerHTML == "X" && squares[arrSq[i][2]].innerHTML == "X") {
-                squares[arrSq[i][0]].style.backgroundColor = "rgb(187, 235, 131)"
-                squares[arrSq[i][1]].style.backgroundColor = "rgb(187, 235, 131)"
-                squares[arrSq[i][2]].style.backgroundColor = "rgb(187, 235, 131)"
-
+                squares[arrSq[i][0]].style.backgroundColor = "rgb(187, 235, 131, .5)"
+                squares[arrSq[i][1]].style.backgroundColor = "rgb(187, 235, 131, .5)"
+                squares[arrSq[i][2]].style.backgroundColor = "rgb(187, 235, 131, .5)"
                 result = "Player X wins!";
+                winSound.play();
                 activeGame = false;
                 scoreX();
                 prepareResult(result);
                 break;
 
             } else if (squares[arrSq[i][0]].innerHTML == "O" && squares[arrSq[i][1]].innerHTML == "O" && squares[arrSq[i][2]].innerHTML == "O") {
-                squares[arrSq[i][0]].style.backgroundColor = "rgb(187, 235, 131)"
-                squares[arrSq[i][1]].style.backgroundColor = "rgb(187, 235, 131)"
-                squares[arrSq[i][2]].style.backgroundColor = "rgb(187, 235, 131)"
+                squares[arrSq[i][0]].style.backgroundColor = "rgb(187, 235, 131, .5)"
+                squares[arrSq[i][1]].style.backgroundColor = "rgb(187, 235, 131, .5)"
+                squares[arrSq[i][2]].style.backgroundColor = "rgb(187, 235, 131, .5)"
                 result = "Player O wins!";
+                winSound.play();
                 scoreO();
                 prepareResult(result);
                 activeGame = false;
@@ -108,6 +133,7 @@ resetGame.addEventListener("click", () => {
         illegal.innerHTML = "";
         moves = 0;
     })
+    winSound.pause();
     activeGame = true;
 })
 
@@ -120,7 +146,5 @@ function scoreO() {
     oWins++;
     oCount.innerHTML = `Player O: ${oWins}`
 }
-
-
 
 
