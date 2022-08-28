@@ -13,25 +13,32 @@ let xWins = 0;
 let oWins = 0;
 let gameSound;
 
-let winSound = new Howl({
-    src: ['/W3D5/tic_tac_toe_game/sound/win.wav'],
-    volume: 1.0,
-    // onend: function () {
-    //     alert('Reset the game to play again!');
-    // }
-});
+
 let tieSound = new Howl({
     src: ['/W3D5/tic_tac_toe_game/sound/tie.wav'],
     volume: 1.0,
-    // onend: function () {
-    //     alert('Reset the game to try again!');
-    // }
+    onend: function () {
+        alert('Reset the game to try again!');
+    }
 });
 let moveSound = new Howl({
     src: ['/W3D5/tic_tac_toe_game/sound/move.wav'],
     volume: 1.0
 });
 
+
+let cheatSound = new Howl({
+    src: ['/W3D5/tic_tac_toe_game/sound/cheat.wav'],
+    volume: 1.0
+});
+
+let winSound = new Howl({
+    src: ['/W3D5/tic_tac_toe_game/sound/game-win-sound-effect.mp3'],
+    volume: 1.0,
+    onend: function () {
+        alert('Reset the game to play again!');
+    }
+});
 
 function changePlayer() {
     if (player === "X") player = "O";
@@ -50,12 +57,16 @@ squares.forEach(square => {
             if (moves === 9) {
                 illegal.innerHTML = "It's a tie! Reset a game and start over!"
                 tieSound.play()
+                illegal.style.setProperty('--animate-duration', '2s');
+                illegal.classList.add('animate__animated', 'animate__lightSpeedInLeft')
             }
         } else if (square.innerHTML) {
-            square.style.backgroundColor = "rgb(237, 75, 75)"
+            square.style.backgroundColor = "rgb(237, 75, 75)";
+            cheatSound.play();
             illegal.innerHTML = "Don't cheat!";
             illegal.style.setProperty('--animate-duration', '2s');
             illegal.classList.add('animate__animated', 'animate__lightSpeedInLeft')
+            // illegal.classList.add('animate__animated', 'animate__zoomIn')
 
             setTimeout(
                 function () {
@@ -67,6 +78,8 @@ squares.forEach(square => {
                 }, 2000);
         } else {
             illegal.innerHTML = "Someone has already won! Reset the game!"
+            illegal.style.setProperty('--animate-duration', '2s');
+            illegal.classList.add('animate__animated', 'animate__lightSpeedInLeft')
         }
         checkResult();
     });
