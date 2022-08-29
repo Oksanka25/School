@@ -7,11 +7,23 @@ function startGame() {
     }
 }
 
-const alienShips = [
-    { name: 'War Fighter 1', hull: 3, firepower: 2, accuracy: .6 },
-    { name: 'War Fighter 2', hull: 4, firepower: 2, accuracy: .6 },
-    { name: 'War Fighter 4', hull: 5, firepower: 3, accuracy: .7 },
-    { name: 'War Fighter 5', hull: 6, firepower: 3, accuracy: .7 },
-    { name: 'Alien Lieutenant', hull: 5, firepower: 3, accuracy: .7 },
-    { name: 'Alien General', hull: 6, firepower: 4, accuracy: .8 }
-];
+// const alienShip = [
+//     { name: 'War Fighter 1', hull: 3, firepower: 2, accuracy: .6 },
+//     { name: 'War Fighter 2', hull: 4, firepower: 2, accuracy: .6 },
+//     { name: 'War Fighter 4', hull: 5, firepower: 3, accuracy: .7 },
+//     { name: 'War Fighter 5', hull: 6, firepower: 3, accuracy: .7 },
+//     { name: 'Alien Lieutenant', hull: 5, firepower: 3, accuracy: .7 },
+//     { name: 'Alien General', hull: 6, firepower: 4, accuracy: .8 }
+// ];
+// console.log(alienShip);
+
+class mySpaceship {
+    constructor() {
+        this.name = 'USS HelloWorld'
+        this.hull = 20
+        this.firepower = 5
+        this.accuracy = 0.7
+    }
+};
+
+console.log(mySpaceship)
