@@ -1,5 +1,5 @@
 let squares = document.querySelectorAll('.square')
-console.log(squares);
+// console.log(squares);
 let player = "X";
 let illegal = document.querySelector(".illegal");
 let result = "";
@@ -28,7 +28,7 @@ let moveSound = new Howl({
 
 
 let cheatSound = new Howl({
-    src: ['/W3D5/tic_tac_toe_game/sound/cheat.wav'],
+    src: ['/W3D5/tic_tac_toe_game/sound/Game-show-buzzer-sound-effect.mp3'],
     volume: 1.0
 });
 
@@ -104,6 +104,8 @@ const checkResult = () => {
                 squares[arrSq[i][1]].style.backgroundColor = "rgb(187, 235, 131, .5)"
                 squares[arrSq[i][2]].style.backgroundColor = "rgb(187, 235, 131, .5)"
                 result = "Player X wins!";
+                illegal.style.setProperty('--animate-duration', '2s');
+                illegal.classList.add('animate__animated', 'animate__zoomInDown')
                 winSound.play();
                 activeGame = false;
                 scoreX();
@@ -115,6 +117,8 @@ const checkResult = () => {
                 squares[arrSq[i][1]].style.backgroundColor = "rgb(187, 235, 131, .5)"
                 squares[arrSq[i][2]].style.backgroundColor = "rgb(187, 235, 131, .5)"
                 result = "Player O wins!";
+                illegal.style.setProperty('--animate-duration', '2s');
+                illegal.classList.add('animate__animated', 'animate__zoomInDown')
                 winSound.play();
                 scoreO();
                 prepareResult(result);
@@ -146,7 +150,7 @@ resetGame.addEventListener("click", () => {
         illegal.innerHTML = "";
         moves = 0;
     })
-    winSound.pause();
+    // winSound.pause();
     activeGame = true;
 })
 
