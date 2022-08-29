@@ -1,0 +1,17 @@
+body {
+    background-color: bisque;
+}
+
+#battle-field {
+    background-color: aquamarine;
+    width: 80%;
+    display: block;
+}
+
+.sky-area {
+    background-color: brown;
+}
+
+.earth-area {
+    background-color: blue;
+}
