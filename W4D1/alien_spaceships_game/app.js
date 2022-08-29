@@ -17,7 +17,7 @@ function startGame() {
 // ];
 // console.log(alienShip);
 
-class mySpaceship {
+class Spaceship {
     constructor() {
         this.name = 'USS HelloWorld'
         this.hull = 20
@@ -26,4 +26,14 @@ class mySpaceship {
     }
 };
 
-console.log(mySpaceship)
+console.log(Spaceship)
+
+const enemyShip = [
+    { name: 'War Fighter 1', hull: 3, firepower: 2, accuracy: .6 },
+    { name: 'War Fighter 2', hull: 4, firepower: 2, accuracy: .6 },
+    { name: 'Alien Lieutenant', hull: 5, firepower: 3, accuracy: .7 },
+    { name: 'War Fighter 4', hull: 5, firepower: 3, accuracy: .7 },
+    { name: 'War Fighter 5', hull: 6, firepower: 3, accuracy: .7 },
+    { name: 'Alien General', hull: 6, firepower: 4, accuracy: .8 }
+];
+// console.log(enemyShip)
