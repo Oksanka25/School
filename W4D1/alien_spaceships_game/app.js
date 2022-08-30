@@ -117,3 +117,15 @@ class Enemy {
         }
     }
 }
+
+// Create Weapon Pods
+function createPods() {
+    let weaponPods = [];
+    // Giving each weapon pod random health
+    for (let i = 0; i < randomBetween(1, 3); i++) {
+        // Create weapon pods with health(1-5) and firepower(1-5)
+        const pod = { hull: parseInt(randomBetween(1, 5)), firepower: parseInt(randomBetween(1, 5)) };
+        weaponPods.push(pod);
+    }
+    return weaponPods;
+}
