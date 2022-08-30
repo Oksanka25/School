@@ -1,3 +1,16 @@
+let startGame = document.querySelector('.start');
+let attack = document.querySelector('.attack');
+let checkShip = document.querySelector('.check-ships');
+let useMissile = document.querySelector('.use-missile');
+let useShield = document.querySelector('.use-shield');
+let allyStats = document.querySelector('.ally-stats');
+let enemyStats = document.querySelector('enemy-stats');
+let gameBoard = document.querySelector('.gameboard');
+
+
+
+
+
 function startGame() {
     let welcome = prompt('Welcome to Space Battle, Earth is under attack and in need of assistance! Will you Aid in the survival of Earth? Y/N');
     if (welcome.toLowerCase() == 'y') {

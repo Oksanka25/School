@@ -77,7 +77,7 @@ squares.forEach(square => {
                     illegal.classList.remove('animate__animated', 'animate__lightSpeedInLeft')
                 }, 2000);
         } else {
-            illegal.innerHTML = "Someone has already won! Reset the game!"
+            illegal.innerHTML = `${player}  has already won! Reset the game!`
             illegal.style.setProperty('--animate-duration', '2s');
             illegal.classList.add('animate__animated', 'animate__lightSpeedInLeft')
         }
