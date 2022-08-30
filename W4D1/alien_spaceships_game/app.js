@@ -66,3 +66,54 @@ class Ship {
         this.hull += shieldVal;
     }
 }
+
+class MegaShip extends Enemy {
+    constructor() {
+        super('Mega-Ship');
+        this.weaponPods = createPods();
+    }
+    useWeaponPodOn(ship) {
+        // Use of accuracy to determine a hit
+        if (Math.random() < this.accuracy) {
+            // Uses weapon pod to attack, removes pod from inventory
+            console.log(`${this.name} attacked ${ship.name} with ${this.firepower} firepower using it's weapon pod!`);
+            ship.hull -= this.weaponPods[0].firepower;
+            this.weaponPods.splice(0, 1);
+        } else {
+            // Even if the weapon pod misses, it is still removed from inventory
+            console.log(`${this.name}'s weapon pod missed ${ship.name}!`);
+            this.weaponPods.splice(0, 1);
+        }
+    }
+    isAttackedBy(ship) {
+        // This function works out the weapon pod to health feature
+        // Checks if Mega-Ship still has pods
+        if (this.weaponPods.length === 0) {
+            this.hull -= ship.firepower;
+        } else {
+            // Removes weapon pod if used for defense
+            this.weaponPods.pop();
+            console.log(`${this.name} used a weapon pod to take the damage!\n${this.name} lost a weapon pod.`);
+        }
+    }
+}
+
+class Enemy {
+    constructor(num) {
+        this.name = `Alien ${num}`;
+        this.hull = parseInt(randomBetween(3, 6).toFixed(0));          //between 3 & 6
+        this.firepower = parseInt(randomBetween(2, 4).toFixed(0));     //between 2 & 4
+        this.accuracy = parseFloat(randomBetween(.6, .8).toFixed(1));  //between .6 & .8
+    }
+    attack(ship) {
+        // Use of accuracy to determine a hit
+        if (Math.random() < this.accuracy) {
+            gameBoard.innerHTML = `${this.name} attacked ${ship.name} with ${this.firepower} firepower!`
+            // console.log(`${this.name} attacked ${ship.name} with ${this.firepower} firepower!`);
+            ship.hull -= this.firepower;
+        } else {
+            gameBoard.innerHTML = `${this.name}'s shots missed ${ship.name}!`;
+            console.log(`${this.name}'s shots missed ${ship.name}!`);
+        }
+    }
+}
