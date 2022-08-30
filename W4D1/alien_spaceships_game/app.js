@@ -4,7 +4,7 @@ let checkShip = document.querySelector('.check-ships');
 let useMissile = document.querySelector('.use-missile');
 let useShield = document.querySelector('.use-shield');
 let allyStats = document.querySelector('.ally-stats');
-let enemyStats = document.querySelector('enemy-stats');
+let enemyStats = document.querySelector('.enemy-stats');
 let gameBoard = document.querySelector('.gameboard');
 
 
@@ -15,7 +15,7 @@ function randomBetween(min, max) {
 
 // Function to separate sections
 function separator() {
-    console.log("-------------------", "font-weight:bold;");
+    console.log("%c-------------------", "font-weight:bold;");
 }
 
 class Ship {
@@ -167,7 +167,7 @@ class Game {
             // Prompts user to make a choice of action
             let option = prompt("What do you want to do? \n (attack) (shield) (check) (exit)");
             // Output choice
-            console.log(`You chose: ${option}`, "color:orange;");
+            console.log(`%cYou chose: ${option}`, "color:orange;");
             // Switch case for each option
             switch (option) {
                 case 'attack':
@@ -198,7 +198,7 @@ class Game {
                 enemyOption = 'check';
             } else {
                 // Output enemy choice
-                console.log(`Enemy Chose: ${enemyOption}`, "color:orange;");
+                console.log(`%cEnemy Chose: ${enemyOption}`, "color:orange;");
             }
             switch (enemyOption) {
                 case 'attack':
@@ -235,8 +235,8 @@ class Game {
         // Prints ally ship's values in green
         let allyShip = Object.entries(this.allyShip);
         let messageA = printArrObj(allyShip);
-        // allyStats.innerHTML = `${messageA}`
-        console.log(messageA, "color:lightgreen; font-weight:bold; text-transform:capitalize;");
+        allyStats.innerHTML = `${messageA}`
+        console.log("%c" + messageA, "color:lightgreen; font-weight:bold; text-transform:capitalize;");
 
         // Prints all enemy ships' values in red
         let enemyArr = Object.values(this.enemyShips);
@@ -247,25 +247,25 @@ class Game {
                 let megaShip = Object.entries(this.enemyShips[enemyArr.length - 1]);
                 // Use printArrObj() to print the ships
                 let messageMS = printArrObj(megaShip)
-                console.log("" + messageMS, "color:pink; font-weight:bold; text-transform:capitalize;");
+                console.log("%c" + messageMS, "color:pink; font-weight:bold; text-transform:capitalize;");
             } else {
                 let q = Object.entries(this.enemyShips[i]);
                 // Use printArrObj() to print the ships
                 let messageE = printArrObj(q);
-                // enemyStats.innerHTML = `${messageE}`
-                console.log("" + messageE, "color:pink; font-weight:bold; text-transform:capitalize;");
+                console.log("%c" + messageE, "color:pink; font-weight:bold; text-transform:capitalize;");
+                enemyStats.innerHTML = `${messageE}`
             }
         }
     }
     checkWin() {
         // If the ally ship is destroyed
         if (this.allyShip.hull <= 0) {
-            console.log(`The ${this.allyShip.name} went down!`,
+            console.log(`%cThe ${this.allyShip.name} went down!`,
                 "font-weight:bold; text-shadow:1px 1px 0 red");
             return true;
         } else if (this.enemyShips.length === 0) {
             // If the ally ship beat the Enemy ship squad
-            console.log(`The ${this.allyShip.name} won!`,
+            console.log(`%cThe ${this.allyShip.name} won!`,
                 "font-weight:bold; text-shadow:1px 1px 0 red");
             return true;
         }
@@ -304,6 +304,6 @@ function printArrObj(arr) {
 
 // Main Game
 const game = new Game();
-game.start('USS HelloWorld', 4);
+game.start('USS HelloWorld', 5);
 game.print();
 game.battle();
