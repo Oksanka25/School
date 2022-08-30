@@ -1,17 +1,41 @@
 body {
-    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(210, 199, 199);
 }
 
-#battle-field {
-    background-color: aquamarine;
-    width: 80%;
-    display: block;
+div {
+    display: flex;
+    border: 1px solid red;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-.sky-area {
-    background-color: brown;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
-.earth-area {
-    background-color: blue;
+.gameboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+    height: 300px;
+    background-color: rgb(179, 220, 121);
+    color: white;
+}
+
+.enemy-stats,
+.ally-stats {
+    align-items: center;
+}
+
+button:hover {
+    background-color: lightblue;
 }
