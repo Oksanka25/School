@@ -1,7 +1,11 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: rgb(210, 199, 199);
+    /* background-color: rgb(210, 199, 199); */
+    /* background-image: url("https://i.pinimg.com/564x/85/02/f2/8502f286d73ce06f59e1464ee2d7fcd8.jpg"); */
+    background-image: url("https://i.pinimg.com/236x/be/95/e3/be95e3ccacb5919ac76cec66d9b299c9.jpg");
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 div {

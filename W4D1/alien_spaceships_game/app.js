@@ -39,7 +39,7 @@ class Ship {
             }
         } else {
             gameBoard.innerHTML = `${this.name}'s shots missed ${enemy.name}!`
-            // console.log(`${this.name}'s shots missed ${enemy.name}!`);
+            console.log(`${this.name}'s shots missed ${enemy.name}!`);
         }
     }
     target(group, enemyName) {
@@ -49,7 +49,7 @@ class Ship {
         // If Target Index = -1, means Ship with ship.name is not in the group array anymore
         if (index === -1) {
             gameBoard.innerHTML = `${enemyName} is not a valid selection.`
-            // console.log(`${enemyName} is not a valid selection.`);
+            console.log(`${enemyName} is not a valid selection.`);
             return false;
         } else {
             // Attack the targeted ship
@@ -57,7 +57,7 @@ class Ship {
             // If Enemy ship is destroyed, remove from array of ships
             if (group[index].hull <= 0) {
                 gameBoard.innerHTML = `${group[index].name} was destroyed!`
-                // console.log(`${group[index].name} was destroyed!`);
+                console.log(`${group[index].name} was destroyed!`);
                 group.splice(index, 1);
             }
             return true;
@@ -84,12 +84,11 @@ class Enemy {
         // Use of accuracy to determine a hit
         if (Math.random() < this.accuracy) {
             gameBoard.innerHTML = `${this.name} attacked ${ship.name} with ${this.firepower} firepower!`
-            // console.log(`${this.name} attacked ${ship.name} with ${this.firepower} firepower!`);
+            console.log(`${this.name} attacked ${ship.name} with ${this.firepower} firepower!`);
             ship.hull -= this.firepower;
         } else {
-
             gameBoard.innerHTML = `${this.name}'s shots missed ${ship.name}!`;
-            // console.log(`${this.name}'s shots missed ${ship.name}!`);
+            console.log(`${this.name}'s shots missed ${ship.name}!`);
         }
     }
 }
