@@ -42,13 +42,38 @@ const radio = {
                 }
             ]
         },
+        {
+            name: 'Greatest Songs',
+            songs: [
+                {
+                    title: 'Baby Love',
+                    artist: 'The Supremes'
+                },
+                {
+                    title: 'Pancho and Lefty ',
+                    artist: 'Townes Van Zandt'
+                },
+                {
+                    title: 'Truth Hurts',
+                    artist: 'Lizzo'
+                },
+                {
+                    title: 'Without You',
+                    artist: 'Harry Nilsson'
+                },
+                {
+                    title: 'You are So Vain',
+                    artist: 'Carly Simon'
+                }
+            ]
+        },
     ],
 
     changeStation() {
         const randomStation = this.stations[Math.floor(Math.random() * this.stations.length)];
-        console.log(`Station: ${randomStation.name}`)
+        // console.log(`Station: ${randomStation.name}`)
         const randomSong = randomStation.songs[Math.floor(Math.random() * randomStation.songs.length)];
-        console.log(`Now Playing: ${randomSong.title} by ${randomSong.artist}`)
+        console.log(`Now Playing: ${randomSong.title} by ${randomSong.artist} on ${randomStation.name} Station`)
 
         // for all songs in station
         // randomStation.songs.forEach(
