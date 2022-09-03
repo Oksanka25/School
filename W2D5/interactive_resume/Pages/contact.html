@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="/script.js"></script>
+    <title>Contact Oksana Kalyniak</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="../index.html"> Home </a>
+        </div>
+        <div>
+            <a href="./about.html"> About </a>
+        </div>
+        <div>
+            <a href="./projects.html"> Projects </a>
+        </div>
+        <div>
+            <a href="./contact.html"> Contact </a>
+        </div>
+    </nav>
+
+    <section id="contact" class="contact">
+        <div class="contact-box">
+            <i class="bi bi-share-fill"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/oksana-kalyniak/" style="color: rgb(17, 17, 228);"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Oksanka25" style="color: black;"><i class="bi bi-github"></i></a>
+                <a href="https://twitter.com/chekoksa" style="color: rgb(25, 168, 239);"><i
+                        class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <i class="bi bi-envelope-fill"></i>
+            <div class="info-box">
+                <i class="bx bx-envelope"></i>
+                <h3>EMAIL ME</h3>
+                <p>chekoksa25@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="How can I help you?"></textarea>
+            <button type="submit"> Send</button>
+        </form>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-text"> Created by Oksana Kalyniak </div>
+    </footer>
+</body>
+
+</html>

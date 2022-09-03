@@ -1,0 +1,337 @@
+/* FONTS */
+
+/* home page fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.container h1,
+.container h2,
+.heading {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+.home-navbar a {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* about page fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+#about-container h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+.bio-text p {
+    font-family: 'Cinzel', serif;
+
+
+}
+
+
+/* general styling that aplly to all pages */
+body {
+    /* background-color: #caf0f8; */
+    background-image: url(https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?w=2000);
+
+    margin: 0%;
+    position: relative;
+}
+
+.navbar {
+    background-color: #d7eaef;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navbar a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fb00ab;
+}
+
+.navbar a:hover {
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #d7eaef;
+    width: 100%;
+    height: 25px;
+    scroll-margin-top: 20px;
+}
+
+
+
+p {
+    font-size: 20px;
+}
+
+
+/* HOME Page */
+
+#header .home-navbar a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fb00ab;
+    font-size: 20px;
+}
+
+#header {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+#header .social-links {
+    margin-top: 30px;
+    display: flex;
+}
+
+#header .social-links a {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#header .social-links a:hover {
+    background: rgb(189, 189, 192);
+}
+
+.home-navbar li {
+    position: relative;
+}
+
+.home-navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    position: relative;
+}
+
+
+/* About Page */
+
+#about-container {
+    margin: 15px;
+
+}
+
+#about-container a {
+    text-decoration: none;
+    color: #c000fb;
+}
+
+.heading {
+    text-decoration: underline;
+    color: #dd03ff;
+    margin: 25px;
+}
+
+.bio {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.bio-text {
+    margin-top: 50px;
+    margin-left: 35px;
+    position: absoloute;
+
+}
+
+#video {
+    padding-bottom: 20px;
+}
+
+.about-fav li {
+    font-size: 20px;
+}
+
+.about-technologies li {
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.about-technologies h3 {
+    margin: 30px;
+}
+
+
+/* Projects Page */
+
+.projects-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.projects-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-table img {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 6px;
+    object-fit: fill;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform .2s;
+    overflow: hidden;
+
+}
+
+.projects-table img:hover {
+    transform: scale(1.2);
+}
+
+.projects-wrap img {
+    border-radius: 25px;
+}
+
+.projects-wrap {
+
+    overflow: hidden;
+}
+
+#projects-links a {
+    font-size: 25px;
+    position: relative;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#projects-links a:hover {
+    background: rgb(189, 189, 192);
+}
+
+.projects-image:hover {
+    transform: scale(1.0);
+}
+
+
+/* Contact Page */
+
+.contact .contact-box .social-links {
+    margin: 5px 0 0 68px;
+    display: flex;
+}
+
+.contact .contact-box .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+
+/* .contact .contact-box .social-links a:hover {
+    color: #18d26e;
+} */
+
+.contact .contact-box i.bi {
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 14px;
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contact .contact-box h3 {
+    font-size: 20px;
+    color: #fb00ab;
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+}
+
+
+/* CONTACT FORM */
+.contact-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: #d7eaef; */
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    margin-left: 15px;
+}
+
+form {
+    background-color: #d7eaef;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3 {
+    color: #fb00ab;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+
+}
+
+form input,
+form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    background: #f9f5f5;
+
+}
+
+form button {
+    padding: 15px;
+    background: #91146a;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
