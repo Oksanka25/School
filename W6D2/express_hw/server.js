@@ -32,4 +32,17 @@ app.get('/tip/:total/:tipPercentage', (req, res) => {
     res.send(`Total: $${num1}. Tip: 20%. Tip: $${tip.toString()}. To pay: $${totalPay}`)
 })
 
+// 3. ## Magic 8 Ball
+
+// 1. Create a route of `'/magic'` that should expect a phrase in the URL that ask the Magic 8 ball a question.
+// 2. So if the user hits that route and asks a question of “Will I be a Millionaire” (i.e., `'/magic/Will%20I%20Be%20A%20Millionaire'`) they should see returned to them their question AND a random Magic 8 ball response (see the array below) on the screen.
+// 3. Remember that we can’t use spaces in the url, so we use `%20` to express a space in the url.
+const responses = ["It is certain", "It is decidedly so", "Without a doubt", "Yes definitely", "You may rely on it", "As I see it yes", "Most likely", "Outlook good", "Yes", "Signs point to yes", "Reply hazy try again", "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"];
+function randomItem(max) { return Math.floor(Math.random() * max) }
+
+app.get('/magic/:question', (req, res) => {
+    res.send(`<p>${req.params.question}?</p>
+     <p>${responses[randomItem(responses.length)]}</p>`)
+})
+
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
