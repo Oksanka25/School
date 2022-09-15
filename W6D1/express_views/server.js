@@ -4,16 +4,18 @@ const app = express();
 // configure the app settings (used by app.listen)
 const PORT = 3001;
 
-
-
-
-//configurations here
+// configurations here
 // viw engine
 app.set('view engine', 'ejs')
 
 const plants = ['Monstera Deliciosa', 'Corpse Flower', 'Elephant-Foot Yam', "Witches' Butter",];
 
-
+// "Home" route
+app.get('/', (req, res) => res.send('Welcome to Home!'));
+// "Index" route
+app.get('/index', (req, res) => res.render('index.ejs'))
+// "Show" route
+app.get('/show', (req, res) => res.render('show.ejs'))
 
 app.get('/fixed', (req, res) => { //this will never be reached
     res.send(`
@@ -26,8 +28,7 @@ app.get('/fixed', (req, res) => { //this will never be reached
 //     res.send(plants[req.params.indexOfPlantsArray]);
 // });
 
-
-app.get('/:indexOfPlantsArray', (req, res) => {
+app.get('fixed/:indexOfPlantsArray', (req, res) => {
     if (plants[req.params.index]) {
         res.send(plants[req.params.indexOfPlantsArray]);
     } else {
@@ -35,13 +36,6 @@ app.get('/:indexOfPlantsArray', (req, res) => {
     }
 
 });
-// "Home" route
-app.get('/', (req, res) => res.send('Welcome to Home!'));
-// "Index" route
-app.get('/index', (req, res) => res.render('index.ejs'))
-// "Show" route
-app.get('/show', (req, res) => res.render('show.ejs'))
-
 
 
 
