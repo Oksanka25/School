@@ -45,4 +45,33 @@ app.get('/magic/:question', (req, res) => {
      <p>${responses[randomItem(responses.length)]}</p>`)
 })
 
+
+// 4.- On the home page (`get "/"`), users should see:
+// - "99 Bottles of beer on the wall"
+// - a link that says "take one down, pass it around"
+// - this should link to `/98`, where the number represents the number of bottles left.
+// - When a number is given in the url (`get "/:number_of_bottles"`), users should see:
+// - The number of bottles of beer on the wall (i.e. `98 Bottles of beer on the wall.`)
+// - a link to "take one down, pass it around", where the href is number of bottles in the parameter minus 1.
+// - If there are 0 bottles left, do not show a link to "take one down"
+// - Add a link to start over, which directs the user back to the home page.
+app.get('/bottles/:number_of_bottles', (req, res) => {
+    let bottles = req.params.number_of_bottles;
+    if (req.params.number_of_bottles > 1) {
+        res.send(`<h1> ${bottles} bottles of beer on the wall</h1> <br> <a href="/bottles/${bottles - 1}"> Take one down, pass it around </a>`);
+    }
+    else if (req.params.number_of_bottles == 1) {
+        res.send(`<h1> ${bottles} bottle of beer on the wall</h1> <br> <a href="/bottles/${bottles - 1}"> Take one down, pass it around </a>`);
+    } else if (req.params.number_of_bottles == 0) {
+        res.send(`<h1> No bottles of beer left on the wall  </h1> <br> <a href="/bottles/99"> Back to 99 bottles of beer on the wall </a>`)
+    } else {
+        console.log("something went wrong");
+    }
+})
+
+app.get("/", (req, res) => {
+    res.redirect("/bottles/99");
+});
+
+
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
