@@ -9,7 +9,7 @@ class Show extends React.Component {
                 </h1>
                 <img src={poke.img} alt={poke.name} />
                 <br></br>
-                <a href="/pokemon">All Pokemon</a>
+                <a href="/pokemon">All Pokemon List</a>
             </div>
         );
     }
