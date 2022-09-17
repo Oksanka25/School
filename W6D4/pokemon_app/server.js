@@ -16,6 +16,12 @@ app.get('/pokemon', (req, res) => {
     res.render('Index', { allPokemon: pokemon });
 });
 
+app.get('/pokemon/:id', (req, res) => {
+    let id = req.params.id;
+    const context = { onePokemon: pokemon[id] };
+    res.render('Show', context)
+})
+
 
 
 
