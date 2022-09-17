@@ -9,7 +9,8 @@ const pokemon = require("./models/pokemon")
 console.log(pokemon);
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the Pokemon App!');
+    // res.send('Welcome to the Pokemon App!');
+    res.redirect('/pokemon')
 });
 
 app.get('/pokemon', (req, res) => {
