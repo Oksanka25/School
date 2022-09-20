@@ -2,7 +2,11 @@ const React = require('react')
 class Show extends React.Component {
     render() {
         const poke = this.props.onePokemon;
-        const id = this.props.id
+        { console.log(this.props) }
+        const { allPokemon } = this.props;
+        const id = allPokemon.findIndex((el) => {
+            return el.name == poke.name;
+        })
         return (
             <div>
                 <h1>Gotta Catch 'Em All</h1>
@@ -11,7 +15,11 @@ class Show extends React.Component {
                 </h2>
                 <img src={poke.img} alt={poke.name} />
                 <br></br>
-                <form method="POST" action="/pokemon/{id}?_method=DELETE">
+                <button>
+                    <a href={`/pokemon/${id}/edit`}> Edit{poke.name}</a>
+                </button>
+                <br></br>
+                <form method="POST" action={`/pokemon/${id}?_method=DELETE`}>
                     <button type="submit" value="Delete Pokemon"> Delete Pokemon
                     </button>
                 </form>
