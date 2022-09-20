@@ -55,19 +55,13 @@ app.get('/pokemon/:id', (req, res) => {
 
 // Edit
 app.get('/pokemon/:id/edit', (req, res) => {
-    // const foundPokemon = pokemon[req.params.id]
-    // const context = {
-    //     onePokemon: foundPokemon,
-    //     id: req.params.id
-    // }
 
-    // let id = req.params.id;
-    // const context = { onePokemon: pokemon[id] };
-    res.render('Edit', {
+    const context = {
         onePokemon: pokemon[req.params.id],
         allPokemon: pokemon,
         id: req.params.id,
-    });
+    }
+    res.render('Edit', context);
 });
 
 
@@ -80,7 +74,6 @@ app.delete('/pokemon/:id', (req, res) => {
 
 // Update
 app.put('/pokemon/:id', (req, res) => {
-    // pokemon[req.params.id] = req.body
     pokemon.splice(req.params.id, 1, req.body)
     res.redirect(`/pokemon/${req.params.id}`)
 });
