@@ -1,5 +1,5 @@
 {
-  "name": "fruits_express_app",
+  "name": "students_mongodb_app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,13 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.2",
-    "env": "^0.0.2",
     "express": "^4.18.1",
     "express-react-views": "^0.11.0",
     "jsx": "^0.9.89",
+    "method-override": "^3.0.0",
     "mongoose": "^6.6.1",
     "nodemon": "^2.0.20",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

@@ -3,7 +3,8 @@ const React = require('react');
 class Edit extends React.Component {
     render() {
         const poke = this.props.onePokemon;
-        const { allPokemon } = this.props;
+        const { allPokemon } = this.props; // object destructuring
+
         const id = allPokemon.findIndex((el) => {
             return el.name === poke.name;
         })

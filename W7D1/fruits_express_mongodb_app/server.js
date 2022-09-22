@@ -5,7 +5,7 @@ const app = express();
 
 //exporting data = Model
 const fruits = require("./models/fruits")
-const fruit = require("./models/Fruit")
+const Fruit = require("./models/Fruit")
 
 
 // Middleware
@@ -23,15 +23,9 @@ app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
-// mongoose.connect(process.env.MONGO_URI, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useCreateIndex: true
-// });
 
 //... and then farther down the file
-mongoose.connect(process.env.MONGO_URI,
-    // { useNewUrlParser: true, useUnifiedTopology: true }
+mongoose.connect(process.env.MONGO_URI
 );
 mongoose.connection.once('open', () => {
     console.log('connected to mongo');
@@ -40,8 +34,11 @@ mongoose.connection.once('open', () => {
 // Routes
 // 1. Index - GET
 app.get('/fruits', (req, res) => {
-    res.render('Index', { allFruits: fruits });
-    // res.send(fruits); // this was before the react view
+    Fruit.find({}, (error, allFruits) => {
+        res.render('fruits/Index', {
+            fruits: allFruits
+        });
+    });
 });
 
 // 3. create a new route
@@ -50,28 +47,35 @@ app.get('/fruits/new', (req, res) => {
     res.render('New');
 });
 
-// 4. Create a post route
-// Since the form in the step 3 tells the browser to create a POST request to /fruits, we’ll need to set up a route handler for this kind of request. 
-app.post('/fruits', (req, res) => {
+// Create Route Create data in MongoDB
+
+app.post('/fruits/', (req, res) => {
     if (req.body.readyToEat === 'on') { //if checked, req.body.readyToEat is set to 'on'
-        req.body.readyToEat = true; //do some data correction
+        req.body.readyToEat = true;
     } else { //if not checked, req.body.readyToEat is undefined
-        req.body.readyToEat = false; //do some data correction
+        req.body.readyToEat = false;
     }
-    fruits.push(req.body);
-    console.log(fruits);
-    // res.send('data received'); // this first to check if the route is working
-    res.redirect('/fruits'); //send the user back to /fruits
+    Fruit.create(req.body, (error, createdFruit) => {
+        res.redirect('/fruits');
+    });
 });
 
 
 // 2. add show route
 // Show - GET
-app.get('/fruits/:indexOfFruitsArray', (req, res) => {
-    res.render('Show', { //second param must be an object
-        fruit: fruits[req.params.indexOfFruitsArray] //there will be a variable available inside the ejs file called fruit, its value is fruits[req.params.indexOfFruitsArray]
+// app.get('/fruits/:indexOfFruitsArray', (req, res) => {
+//     res.render('Show', { //second param must be an object
+//         fruit: fruits[req.params.indexOfFruitsArray] //there will be a variable available inside the ejs file called fruit, its value is fruits[req.params.indexOfFruitsArray]
+//     });
+//     // res.send(fruits[req.params.indexOfFruitsArray]); // this was before the react view
+// });
+
+app.get('/fruits/:id', (req, res) => {
+    Fruit.findById(req.params.id, (err, foundFruit) => {
+        res.render('fruits/Show', {
+            fruit: foundFruit
+        });
     });
-    // res.send(fruits[req.params.indexOfFruitsArray]); // this was before the react view
 });
 
 app.listen(3000, () => {
