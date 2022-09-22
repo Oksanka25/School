@@ -4,9 +4,9 @@ const app = express();
 const PORT = 3000;
 
 // 2. Requiring and Initializing
-const mongoose = require('mongoose');
+require('./config/db.connection');
 const methodOverride = require('method-override');
-require("dotenv").config()
+require("dotenv").config();
 
 
 // 2.1 Middleware
@@ -24,12 +24,8 @@ app.use((req, res, next) => {
     next()
 })
 
-mongoose.connect(process.env.MONGO_URI
-);
-mongoose.connection.once('open', () => {
-    console.log('connected to mongo');
-});
-
+//getting the connection
+require('./config/db.connection.js');
 
 
 
