@@ -49,7 +49,7 @@ app.get('/students/new', (req, res) => {
     res.render('New', {});
 });
 
-// 4.3 POST
+// 4.3 POST (Create)
 app.post('/students', (req, res) => {
     if (req.body.isPassing === "on") {
         req.body.isPassing = true
