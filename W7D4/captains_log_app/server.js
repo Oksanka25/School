@@ -7,6 +7,8 @@ const PORT = 3000;
 require('./config/db.connection');
 const methodOverride = require('method-override');
 require("dotenv").config();
+//getting the MongoDB connection
+require('./config/db.connection.js');
 
 
 // 2.1 Middleware
@@ -24,8 +26,12 @@ app.use((req, res, next) => {
     next()
 })
 
-//getting the connection
-require('./config/db.connection.js');
+
+// ROUTES
+// "new" route - GET - serve form for creating a new log item
+app.get('/logs/new', (req, res) => {
+    res.render('New')
+})
 
 
 
