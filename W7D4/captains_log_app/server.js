@@ -10,6 +10,9 @@ require("dotenv").config();
 //getting the MongoDB connection
 require('./config/db.connection.js');
 
+const Log = require("./models/Log");
+
+
 
 // 2.1 Middleware - executes for every request 
 // defines the view engine
@@ -38,7 +41,7 @@ app.use(express.static('public'))
 
 // ROUTES
 
-// "new" route - GET - serve form for creating a new log item
+// "new" route - GET request - serve form for creating a new log item
 app.get('/logs/new', (req, res) => {
     res.render('New')
 })
@@ -50,7 +53,10 @@ app.post('/logs', (req, res) => {
     } else {
         req.body.shipIsBroken = false
     }
-    res.send('received')
+    Log.create(req.body, (err, createdLog) => {
+        console.log((err));
+    })
+    res.redirect('/logs')
 })
 
 
