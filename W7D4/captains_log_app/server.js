@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 // express.static helps express find where certain files are located
 app.use(express.static('public'))
 
-app.use(express.static("styles"));
+// app.use(express.static("styles"));
 
 
 // ROUTES
