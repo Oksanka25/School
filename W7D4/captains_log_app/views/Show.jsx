@@ -18,6 +18,16 @@ class Show extends React.Component {
                     <br />
                     <p>Log was last updated: {log.updatedAt} </p> */}
                     <br />
+                    <br />
+                    {/* // edit */}
+                    <button>
+                        <a href={`/logs/${log._id}/edit`}> Edit Log</a>
+                    </button>
+                    <br />
+                    {/* // delete */}
+                    <form action={`/logs/${log._id}?_method=DELETE`} method="POST">
+                        <input type="submit" value="DELETE" />
+                    </form>
                     <a href="/logs"> Back to Captain's Log</a>
                 </div>
             </DefaultLayout>

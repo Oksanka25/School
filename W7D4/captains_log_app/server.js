@@ -86,6 +86,20 @@ app.get('/logs/:id', (req, res) => {
 
 
 
+// Logs "destroy" route - DELETE request - removes data from Log database and redirects to index route
+
+app.delete('/logs/:id', (req, res) => {
+    Log.findByIdAndRemove(req.params.id, (err, data) => {
+        console.log((err));
+    })
+    res.redirect('/logs')
+})
+
+
+
+
+
+
 
 
 
