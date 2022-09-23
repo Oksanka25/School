@@ -11,7 +11,7 @@ const logSchema = new mongoose.Schema({
     },
     shipIsBroken: {
         type: Boolean,
-        required: [true, "image can not be empty"],
+        required: [true, "ship status can not be empty"],
     }
 },
     {

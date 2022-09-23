@@ -82,6 +82,33 @@ app.get('/logs/:id', (req, res) => {
     })
 });
 
+//Logs "edit" route - GET request - display an edit form for one log
+
+app.get('/logs/:id/edit', (req, res) => {
+    Log.findById(req.params.id, (err, foundLog) => {
+        console.log((err));
+        if (!err) {
+            res.render("Edit", { log: foundLog })
+        } else {
+            res.send({ msd: err.message })
+        }
+    })
+});
+
+// Logs "update" route - PUT request - updates the Logs array and redirects to show route
+app.put("/logs/:id", (req, res) => {
+    if (req.body.shipIsBroken === "on") {
+        req.body.shipIsBroken = true;
+    } else {
+        req.body.shipIsBroken = false;
+    }
+    Log.findByIdAndUpdate(req.params.id, req.body, (err, updatedLog) => {
+        console.log(err)
+        console.log(updatedLog);
+        res.redirect(`/logs/${req.params.id}`);
+    });
+});
+
 
 
 
