@@ -14,6 +14,7 @@ class Edit extends React.Component {
                         type="text"
                         name="title"
                         defaultValue={this.props.log.title}
+
                     />
                     <br />
                     Entry:{" "}

@@ -1,4 +1,6 @@
 const React = require('react');
+// import "../../styles/app.css";
+
 
 class DefaultLayout extends React.Component {
     render() {
@@ -6,6 +8,7 @@ class DefaultLayout extends React.Component {
             <>
                 <html>
                     <head>
+                        <link type="text/css" rel="stylesheet" href="/W7D4/captains_log_app/styles/app.css"></link>
                         <title>{this.props.title}</title>
                     </head>
                     <body>
