@@ -69,6 +69,19 @@ app.get('/logs', (req, res) => {
     })
 })
 
+// "show" route - GET request - displays details about one product 
+
+app.get('/logs/:id', (req, res) => {
+    Log.findById(req.params.id, (err, foundLog) => {
+        console.log((err));
+        if (!err) {
+            res.render("Show", { log: foundLog })
+        } else {
+            res.send({ msd: err.message })
+        }
+    })
+});
+
 
 
 
