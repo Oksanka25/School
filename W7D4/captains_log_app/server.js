@@ -59,6 +59,17 @@ app.post('/logs', (req, res) => {
     res.redirect('/logs')
 })
 
+// Index route -  GET all logs route
+app.get('/logs', (req, res) => {
+    Log.find({}, (err, allLogs) => {
+        console.log(err);
+        res.render('Index', {
+            logs: allLogs
+        })
+    })
+})
+
+
 
 
 
