@@ -6,17 +6,15 @@ class Show extends React.Component {
         return (
             <DefaultLayout title={"Log Details"}>
                 <div>
-                    <h1>Log Show Page </h1>
+                    <p>Log was created: {new Date(log.createdAt).toLocaleString()} </p>
+                    <p>Log was last updated: {new Date(log.updatedAt).toLocaleString()} </p>
                     <h4> Title: {log.title} </h4>
                     <p> Entry details: {log.entry} </p>
                     <br /> Ship{" "}
                     {log.shipIsBroken
                         ? " Is Broken"
                         : "Is NOT Broken"}
-                    {/* <br />
-                    <p>Log was created: {log.createdAt} </p>
                     <br />
-                    <p>Log was last updated: {log.updatedAt} </p> */}
                     <br />
                     <br />
                     {/* // edit */}
