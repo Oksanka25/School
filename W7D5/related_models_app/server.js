@@ -9,8 +9,7 @@ const methodOverride = require('method-override');
 require("dotenv").config();
 //getting the MongoDB connection
 require('./config/db.connection.js');
-
-
+const controllers = require('./controllers')
 
 
 // 2.1 Middleware - executes for every request 
@@ -36,5 +35,18 @@ app.use((req, res, next) => {
 
 // express.static helps express find where certain files are located
 app.use(express.static('public'))
+
+// CONTROLLERS
+app.use('/singers', controllers.singers)
+app.use('/songs', controllers.songs)
+
+//  "Home" route 
+
+app.get('/', (request, response) => response.send('Welcome to Singers and Songs!'))
+
+
+
+
+
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
