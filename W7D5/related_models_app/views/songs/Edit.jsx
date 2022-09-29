@@ -20,16 +20,11 @@ class Edit extends React.Component {
 
                     />
                     <br />
-                    Year:{" "}
-                    <input type="number" name="year" defaultValue={song.year} />
-                    <br />
-                    Rating: {" "}
-                    <input type="number" name="rating" defaultValue={song.rating} />
-                    <br />
+                    Year:{" "}  <input name="year" type="number" min="1600" max="2022" step="1" required /> <br />
+                    Rating:{" "} <input name="rating" type="number" min="0" step="1" max="5" required /><br />
                     Comment: {" "}
                     <input type="textarea" name="content" defaultValue={song.content} />
                     <br />
-                    Singer: <input type="singer" name="singer" value={oneSinger._id} required /> <br />
                     <input type="submit" value="Submit Song Updates" />
                 </form>
 

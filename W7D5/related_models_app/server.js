@@ -42,7 +42,7 @@ app.use('/songs', controllers.songs)
 
 //  "Home" route 
 
-app.get('/', (request, response) => response.send('Welcome to Singers and Songs!'))
+app.get('/', (request, response) => response.render('Home'))
 
 
 
