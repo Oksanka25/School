@@ -66,23 +66,11 @@ router.get('/:songId', async (req, res, next) => {
         return next();
     }
 })
-// update - PUT route
-router.put('/:songId', async (req, res, next) => {
-    try {
-        const updatedSong = await db.Song.findByIdAndUpdate(req.params.id, req.body);
-        console.log(updatedSong);
-        return res.redirect(`/songs`)
-    } catch (error) {
-        console.log(error);
-        req.error = error;
-        return next();
-    }
-    // res.send('hitting song update: ' + req.params.songId)
-})
+
 // edit - GET route
 router.get('/:songId/edit', async (req, res, next) => {
     try {
-        const updatedSong = await db.Song.findById(req.params.id);
+        const updatedSong = await db.Song.findById(req.params.songId);
         console.log(updatedSong);
         const context = {
             song: updatedSong
@@ -95,6 +83,22 @@ router.get('/:songId/edit', async (req, res, next) => {
     }
     // res.send('hitting song edit: ' + req.params.songId)
 })
+
+// update - PUT route
+router.put('/:songId', async (req, res, next) => {
+    try {
+        const updatedSong = await db.Song.findByIdAndUpdate(req.params.songId, req.body);
+        console.log(updatedSong);
+        return res.redirect('/singers/' + updatedSong.singer)
+    } catch (error) {
+        console.log(error);
+        req.error = error;
+        return next();
+    }
+    // res.send('hitting song update: ' + req.params.songId)
+})
+
+
 // destroy - delete 
 router.delete('/:songId', async (req, res, next) => {
     // res.send('hitting review delete: '+req.params.reviewId)
