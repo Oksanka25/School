@@ -9,7 +9,7 @@ class Show extends React.Component {
                     <p>Log was created: {new Date(log.createdAt).toLocaleString()} </p>
                     <p>Log was last updated: {new Date(log.updatedAt).toLocaleString()} </p>
                     <h4> Title: {log.title} </h4>
-                    <p> Entry details: {log.entry} </p>
+                    <p className="entry-text"> Entry details: {log.entry} </p>
                     <br /> Ship{" "}
                     {log.shipIsBroken
                         ? " Is Broken"
@@ -23,9 +23,12 @@ class Show extends React.Component {
                     </button>
                     <br />
                     {/* // delete */}
-                    <form action={`/logs/${log._id}?_method=DELETE`} method="POST">
-                        <input type="submit" value="DELETE" />
-                    </form>
+                    <button>
+                        <form action={`/logs/${log._id}?_method=DELETE`} method="POST">
+                            <input type="submit" value="DELETE" />
+                        </form>
+                    </button>
+                    <br />
                     <a href="/logs"> Back to Captain's Log</a>
                 </div>
             </DefaultLayout>

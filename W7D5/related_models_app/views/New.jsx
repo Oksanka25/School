@@ -6,11 +6,14 @@ class New extends React.Component {
             <DefaultLayout title={"Add a New Singer "}>
                 <div>
                     <form action="/singers" method="POST">
-                        Name: <input type="text" name="name" required />
+                        <label for="name"> Singer Name: </label>
+                        <input id="name" name="name" type="text" required />
                         <br />
-                        Genre: <input type="textarea" name="genre" required />
+                        <label for="genre"> Singer Genre: </label>
+                        <input id="genre" name="genre" type="text" required />
                         <br />
-                        Image: <input type="textarea" name="image" required />
+                        <label for="image"> Singer Image(url): </label>
+                        <input id="image" name="image" type="text" required />
                         <br />
                         My Favorite: <input type="checkbox" name="isMyFavorite" />
                         <br />

@@ -1,5 +1,3 @@
-// models/Product.js
-
 const mongoose = require('mongoose');
 
 const singerSchema = new mongoose.Schema({

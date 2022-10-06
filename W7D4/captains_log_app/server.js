@@ -127,13 +127,5 @@ app.delete('/logs/:id', (req, res) => {
 
 
 
-
-
-
-
-
-
-
-
 // 1. Boilerplate
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
