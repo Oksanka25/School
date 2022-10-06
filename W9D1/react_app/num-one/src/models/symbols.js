@@ -1,5 +1,7 @@
 const symbols = {
     left: '<',
-    right: '>'
+    right: '>',
+    plus: '+',
+    minus: '-'
 }
 module.exports = symbols

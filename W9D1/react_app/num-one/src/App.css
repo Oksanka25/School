@@ -18,6 +18,11 @@
 .app .buttons {
   margin-left: 6rem;
   margin-bottom: 6rem;
+  display: flex;
+}
+
+.app .buttons .minus button {
+  background-color: rgb(230, 73, 73);
 }
 
 .app .buttons button {
@@ -28,6 +33,7 @@
   margin: 1rem;
   font-size: 5em;
   box-shadow: 0 4px 32px 0 rgba(10, 14, 29, .02), 0 8px 64px 0 rgba(10, 14, 29, .08);
+  background-color: rgb(157, 243, 136);
   cursor: pointer;
 }
 

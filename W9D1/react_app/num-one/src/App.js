@@ -3,8 +3,6 @@ import { useState } from 'react'
 import cardImages from './models/cardImage';
 import symbols from './models/symbols';
 
-import signs from './models/signs';
-
 import Card from './components/Card'
 import Button from './components/Button'
 
@@ -60,8 +58,10 @@ function App() {
           <h1>{myCount}</h1>
         </div>
         <div className="buttons">
-          <Btn title={"-"} signs={signs.minus} action={decrementCount} />
-          <Btn title={"+"} signs={signs.plus} action={incrementCount} />
+          <div className="minus">
+            <Btn signs={symbols.minus} action={decrementCount} />
+          </div>
+          <Btn signs={symbols.plus} action={incrementCount} />
         </div>
       </div>
 
