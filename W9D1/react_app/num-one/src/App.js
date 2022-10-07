@@ -59,9 +59,9 @@ function App() {
         </div>
         <div className="buttons">
           <div className="minus">
-            <Btn signs={symbols.minus} action={decrementCount} />
+            <Btn title={"-"} signs={symbols.minus} action={decrementCount} />
           </div>
-          <Btn signs={symbols.plus} action={incrementCount} />
+          <Btn title={"+"} signs={symbols.plus} action={incrementCount} />
         </div>
       </div>
 
