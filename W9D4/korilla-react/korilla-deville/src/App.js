@@ -28,8 +28,8 @@ function App() {
       </h1>
       <hr />
       <div className="cart">
-        <h3>Cart:</h3>
-        <h1>{cart}</h1>
+        <h3>Cart: {cart}</h3>
+
       </div>
       <Receipt receipt={state.receipt1} />
       <Button title={"Add to Cart"} action={addToCart} />
