@@ -33,8 +33,8 @@
   --color-bg: #f6b8d0;
   --color-black: #1b1b1b;
   --color-white: #ffffff;
-  --color-primary: #0286a3;
-  --color-secondary: #ffb573;
+  --color-primary: #31ad50;
+  --color-secondary: #f59c4d;
 
   /* Transition */
   --transition: all 0.3s ease-in-out;
@@ -54,11 +54,6 @@ body {
   color: var(--color-dark);
   line-height: 1.7;
   background-color: var(--color-bg);
-  /* height: 100vh; */
-  /* background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000"); */
-  /* background-position: bottom; */
-  /* background-repeat: no-repeat; */
-  /* background-size: 100%; */
   background: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000") no-repeat center center fixed;
   background-size: cover;
 }

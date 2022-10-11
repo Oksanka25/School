@@ -1,7 +1,7 @@
 import "./VideoDetail.css";
 
 const VideoDetail = ({ selectedVideo }) => {
-  const detailInstructions = 
+  const detailInstructions =
     <div>
       <p>Search for a video &#x2934;</p>
       <p>Select one from the list &#x27A1;</p>
@@ -11,8 +11,8 @@ const VideoDetail = ({ selectedVideo }) => {
   const descriptionCondition = !selectedVideo ? null : selectedVideo.snippet.description
   const videoSrc = !selectedVideo ? null : `https://www.youtube.com/embed/${selectedVideo.id.videoId}`;
   return (
-    <div className="container videoDetail__container">
-      <div className={selectedVideo ? "video__player" : "is-hidden"}>
+    <div className="container videoDetail-container">
+      <div className={selectedVideo ? "video-player" : "is-hidden"}>
         <iframe
           className={selectedVideo ? "video" : "is-hidden"}
           src={videoSrc}

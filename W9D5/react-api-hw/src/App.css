@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
-.app__container {
+.app-container {
   height: 100vh;
 }
 
 .title {
   margin: 0 0 -1rem .5rem;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Nabla', cursive;
   letter-spacing: 0.75rem;
   font-size: 3rem;
 }
 
-.app__container-grid {
+.app-container-grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
 
-.col__right {
+.col-right {
   margin-right: 2rem;
 }

@@ -25,14 +25,14 @@ const App = () => {
 
 
   return (
-    <div className="container app__container">
-      <h1 className="title">MYTube </h1>
+    <div className="container app-container">
+      <h1 className="title">GreaTube </h1>
       <SearchBar onQuerySubmit={onQuerySubmit} />
-      <div className="app__container-grid">
-        <div className="col__left">
+      <div className="app-container-grid">
+        <div className="col-left">
           <VideoDetail selectedVideo={selectedVideo} />
         </div>
-        <div className={videos.length === 0 ? "is-hidden" : "col__right"}>
+        <div className={videos.length === 0 ? "is-hidden" : "col-right"}>
           <VideoList videos={videos} onVideoSelect={onVideoSelect} />
         </div>
       </div>

@@ -17,14 +17,14 @@ const SearchBar = ({ onQuerySubmit }) => {
 
   return (
     <>
-      <div className="container searchBar__container">
-        <form onSubmit={onFormSubmit} className="search__form">
+      <div className="container searchBar-container">
+        <form onSubmit={onFormSubmit} className="search-form">
           <label htmlFor="query" className="is-hidden">Video Search</label>
           <input
-            className="search__form-input"
+            className="search-form-input"
             type="text"
             name="query"
-            placeholder="Enter video query"
+            placeholder="Search for..."
             value={query}
             onChange={handleSearchChange}
           />

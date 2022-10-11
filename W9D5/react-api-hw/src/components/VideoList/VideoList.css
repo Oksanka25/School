@@ -1,6 +1,6 @@
-.videoList__container {
+.videoList-container {
   padding-bottom: 1rem;
-  height: 80vh; 
+  height: 80vh;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0.25rem 0.25rem 1rem;

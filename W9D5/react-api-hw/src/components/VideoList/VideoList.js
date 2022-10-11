@@ -12,7 +12,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
   });
 
   return (
-    <div className="videoList__container">
+    <div className="videoList-container">
       {foundVideos}
     </div>
   );
