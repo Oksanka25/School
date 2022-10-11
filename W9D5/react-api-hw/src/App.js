@@ -1,7 +1,7 @@
 import SearchBar from "./components/SearchBar/SearchBar";
 import VideoList from "./components/VideoList/VideoList";
 import VideoDetail from "./components/VideoDetail/VideoDetail";
-import youtube from "./apis/youtube";
+import youtube from "./api/youtube";
 import { useState, useEffect } from "react";
 import "./App.css"
 
