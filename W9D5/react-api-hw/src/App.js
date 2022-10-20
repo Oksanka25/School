@@ -20,7 +20,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    onQuerySubmit('')
+    onQuerySubmit('doggies')
   }, [])
 
 

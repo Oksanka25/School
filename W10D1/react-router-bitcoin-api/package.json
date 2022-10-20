@@ -1,6 +1,5 @@
 {
-  "proxy": "http://localhost:5001",
-  "name": "frontend",
+  "name": "react-router-bitcoin-api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

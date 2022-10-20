@@ -15,7 +15,6 @@ function App() {
 
   //Function to getMovies
   const getMovie = async (searchTerm) => {
-
     try {
       const response = await fetch(
         `http://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`

@@ -4,7 +4,8 @@ const VideoDetail = ({ selectedVideo }) => {
   const detailInstructions =
     <div>
       <p>Search for a video &#x2934;</p>
-      <p>Select one from the list &#x27A1;</p>
+      {/* <p>Select one from the list &#x27A1;</p> */}
+      <p>Video Not Found</p>
     </div>
 
   const titleCondition = !selectedVideo ? detailInstructions : selectedVideo.snippet.title
