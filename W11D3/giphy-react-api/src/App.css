@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body {
+  background-color: rgb(243, 243, 125) !important;
+  /* background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/540/861/small/colourful-geometric-isometric-background-free-vector.jpg") !important; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 20+ gifs */
+img {
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  transition: transform .2s;
+}
+
+img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transform: scale(2.1);
+}
+
+
+
+/* to show only 1 gif */
+/* img {
+  padding: 10px;
+  height: 600px;
+  width: 600px
+} */
+
+input {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.top-heading {
+  font-family: 'Macondo', cursive;
+}
+
+
+.search-btn {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #5fef33;
+  border-radius: 6px;
+  border: 1px solid #057fd0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: larger;
+}
+
+.search-btn:hover {
+  background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+  background-color: #019ad2;
+}
+
+.search-btn:active {
+  position: relative;
+  top: 1px;
+}

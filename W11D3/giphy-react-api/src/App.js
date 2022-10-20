@@ -8,7 +8,7 @@ function App() {
 
       <SearchContainer />
 
-    </div>
+    </div >
   );
 }
 
