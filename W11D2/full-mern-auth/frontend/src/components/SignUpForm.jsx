@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { signUp } from "../utilities/users-service";
 
 // CREATE COMPONENT
-const SignUpForm = () => {
+const SignUpForm = ({ setUser }) => {
   // Create different state for the signup component
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -51,6 +51,7 @@ const SignUpForm = () => {
 
       // Log the data to the console
       console.log(user);
+      setUser(user.data);
     } catch (error) {
       setError("Sign Up Failed - Try Again");
     }

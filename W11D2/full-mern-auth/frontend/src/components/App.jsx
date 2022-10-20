@@ -9,23 +9,25 @@ import AuthPage from "../pages/AuthPage";
 import NewOrderPage from "../pages/NewOrderPage";
 import OrderHistoryPage from "../pages/OrderHistoryPage";
 import Navbar from "./Navbar";
+import { getUser } from "../utilities/users-service";
 
 // CREATE COMPONENT
 const App = () => {
   // Create a variable to hold the state of our component
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(getUser());
+  // console.log(user);
   return (
     <main className="App">
       {user ? (
         <>
-          <Navbar />
+          <Navbar user={user} />
           <Routes>
             <Route path="/orders/new/:id" element={<NewOrderPage />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
           </Routes>
         </>
       ) : (
-        <AuthPage />
+        <AuthPage setUser={setUser} />
       )}
     </main>
   );
